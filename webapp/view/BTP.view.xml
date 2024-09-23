@@ -659,7 +659,7 @@
                                             backgroundColorShade="ShadeB">
                                         <!-- <VBox alignItems="End"> -->
                                         <VBox alignItems="Center" justifyContent="Center">
-                                            <Image src="./images/cf.png" width="100%"></Image>
+                                            <Image src="./dist/images/cf.png" width="100%"></Image>
                                         </VBox>
                                         <!-- </VBox> -->
                                     </l:BlockLayoutCell>
@@ -667,7 +667,7 @@
                                             backgroundColorSet="ColorSet10"
                                             backgroundColorShade="ShadeD">
                                         <VBox alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTopBottom">
-                                            <Image src="./images/kyma.png" width="100%"></Image>
+                                            <Image src="./dist/images/kyma.png" width="100%"></Image>
                                         </VBox>
                                     </l:BlockLayoutCell>
                                     <l:BlockLayoutCell
@@ -675,7 +675,7 @@
                                             backgroundColorShade="ShadeE">
                                         <!-- <VBox alignItems="Start"> -->
                                             <VBox alignItems="Center" justifyContent="Center">
-                                            <Image src="./images/abap.png" width="100%"></Image>
+                                            <Image src="./dist/images/abap.png" width="100%"></Image>
                                             </VBox>
                                         <!-- </VBox> -->
                                     </l:BlockLayoutCell>

@@ -44,10 +44,10 @@
                                             class="sapUiSmallMarginTopBottom">
                                         </Title>
                                 <HBox >
-                                    <Image src="./images/github.png" width="50px" press=".onOpenFollowMeOn('https://github.com/lemaiwo')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
-                                    <Image src="./images/xlogoblack.png" width="50px" press=".onOpenFollowMeOn('https://twitter.com/wouter_lemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
-                                    <Image src="./images/linkedin.png" width="50px" press=".onOpenFollowMeOn('https://www.linkedin.com/in/wouterlemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
-                                    <Image src="./images/sap.png" width="100px" press=".onOpenFollowMeOn('https://community.sap.com/t5/user/viewprofilepage/user-id/9863')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./dist/images/github.png" width="50px" press=".onOpenFollowMeOn('https://github.com/lemaiwo')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./dist/images/xlogoblack.png" width="50px" press=".onOpenFollowMeOn('https://twitter.com/wouter_lemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./dist/images/linkedin.png" width="50px" press=".onOpenFollowMeOn('https://www.linkedin.com/in/wouterlemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./dist/images/sap.png" width="100px" press=".onOpenFollowMeOn('https://community.sap.com/t5/user/viewprofilepage/user-id/9863')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
                                 </HBox>
                             </VBox>
                     </l:BlockLayoutCell>
@@ -137,7 +137,7 @@
                                         <StandardListItem
                                             title="SAP Fiori Application Developer"
                                             description="C_FIORDEV_22 - Jan 2023"
-                                            icon="./images/certfiori.png"
+                                            icon="./dist/images/certfiori.png"
                                             iconDensityAware="false"
                                             iconInset="false" 
                                             type="Active"
@@ -145,7 +145,7 @@
                                         <StandardListItem
                                             title="SAP Cloud SDK Extensibility Developer 2022"
                                             description="C_S4CDK_2022 - Dec 2022"
-                                            icon="./images/cloudsdkcert.png"
+                                            icon="./dist/images/cloudsdkcert.png"
                                             iconDensityAware="false"
                                             iconInset="false" 
                                             type="Active"
@@ -153,7 +153,7 @@
                                         <StandardListItem
                                             title="SAP HANA Cloud 1.0"
                                             description="Apr 2022"
-                                            icon="./images/hanacloudcert.png"
+                                            icon="./dist/images/hanacloudcert.png"
                                             iconDensityAware="false"
                                             iconInset="false" 
                                             type="Active"
@@ -161,7 +161,7 @@
                                         <StandardListItem
                                             title="SAP Extension Suite"
                                             description="Jan 2022"
-                                            icon="./images/extcert.png"
+                                            icon="./dist/images/extcert.png"
                                             iconDensityAware="false"
                                             iconInset="false" 
                                             type="Active"
@@ -185,7 +185,7 @@
                                                         <Text text="Ypto" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/ypto.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/ypto.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>
                                     	<CustomListItem>
@@ -198,7 +198,7 @@
                                                         <Text text="European Commission" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/ec.png"  class="sapUiSmallMarginEnd"/>
+                                                <Image height="40px" src="./dist/images/ec.png"  class="sapUiSmallMarginEnd"/>
                                             </FlexBox>
                                         </CustomListItem>
                                     	<CustomListItem>
@@ -211,7 +211,7 @@
                                                         <Text text="Bayer" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/bayer.png"  class="sapUiSmallMarginEnd"/>
+                                                <Image height="40px" src="./dist/images/bayer.png"  class="sapUiSmallMarginEnd"/>
                                             </FlexBox>
                                         </CustomListItem>
                                     	<CustomListItem>
@@ -224,7 +224,7 @@
                                                         <Text text="Fluvius" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/fluvius.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/fluvius.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>
                                     	<CustomListItem>
@@ -237,7 +237,7 @@
                                                         <Text text="Elia Group" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/eliagroup.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/eliagroup.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>   
                                     </items>
@@ -312,7 +312,7 @@
                                                         <Text text="Next-Gen UI5 Control Development" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/sitbe.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/sitbe.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>   
                                     	<CustomListItem type="Active" press=".onOpenURL('https://recap-conf.dev/')">
@@ -325,7 +325,7 @@
                                                         <Text text="CAP Advanced Programming model" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/recap.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/recap.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>   
                                     	<CustomListItem type="Active" press=".onOpenURL('https://openui5.org/ui5con/germany2023/')">
@@ -338,7 +338,7 @@
                                                         <Text text="Next-Gen UI5 Control Development" class="sapMSLIDescription"/>
                                                     </VBox>
                                                 </VBox>
-                                                <Image height="40px" src="./images/UI5con.png" class="sapUiSmallMarginEnd" />
+                                                <Image height="40px" src="./dist/images/UI5con.png" class="sapUiSmallMarginEnd" />
                                             </FlexBox>
                                         </CustomListItem>   
                                     </items>
