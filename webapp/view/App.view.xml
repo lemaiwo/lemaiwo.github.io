@@ -7,7 +7,7 @@
 	<tnt:ToolPage id="toolPage" class="scrollCorrection">
 		<tnt:header>
 			<tnt:ToolHeader>
-				<Avatar src="images/image002.jpg" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
+				<Avatar src="dist/images/image002.jpg" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
 					<layoutData>
 						<OverflowToolbarLayoutData priority="NeverOverflow"/>
 					</layoutData>

@@ -14,7 +14,7 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="sapUiNoContentPadding sapUiDemokitLandingImageCell welcomeImageCell">
                                 <Image
-                                    src="images/goldengatebtp.jpg"
+                                    src="dist/images/goldengatebtp.jpg"
                                     width="100%"
                                     class="welcomeImage"
                                     densityAware="false"/>

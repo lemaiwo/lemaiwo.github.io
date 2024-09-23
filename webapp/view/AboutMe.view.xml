@@ -22,11 +22,11 @@
                             backgroundColorShade="ShadeB"
                             title="">
                             <VBox alignItems="Center">
-                                <Avatar src="images/image002.jpg" displaySize="Custom" customDisplaySize="20rem" press=".onAvatarPressed" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                <Avatar src="dist/images/image002.jpg" displaySize="Custom" customDisplaySize="20rem" press=".onAvatarPressed" displayShape="Circle" showBorder="true" tooltip="Profile">
                                     <detailBox>
                                         <LightBox>
                                             <LightBoxItem
-                                                    imageSrc="images/image002.jpg"
+                                                    imageSrc="dist/images/image002.jpg"
                                                     alt="Wouter Lemaire"
                                                     title="Wouter Lemaire"
                                                     subtitle="SAP Solution Architect, Developer &amp; part of SAP Mentors">
