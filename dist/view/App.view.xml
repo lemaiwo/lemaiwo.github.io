@@ -24,7 +24,7 @@
 					</layoutData>
 				</Text>
 				<ToolbarSpacer />
-				<Button text="Book me" type="Emphasized" press=".onBook()"></Button>
+				<!-- <Button text="Book me" type="Emphasized" press=".onBook()"></Button> -->
 				<Button icon="sap-icon://hint" press=".onInfo"></Button>
 				<Button icon="sap-icon://light-mode" visible="{app>/darkMode}" press=".onSwitchTheme"/>
 				<Button icon="sap-icon://dark-mode" visible="{app>/lightMode}" press=".onSwitchTheme"/>

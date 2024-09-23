@@ -6,15 +6,9 @@
     xmlns:l="sap.ui.layout"
 	height="100%" >
     
-	<!-- <Page
-		enableScrolling="false"
-		showFooter="false"
-		showNavButton="false" showHeader="false"> -->
     <f:DynamicPage id="btppage" class="sapUiNoContentPadding" >
         <f:content>
             <l:VerticalLayout width="100%">
-            <!-- <l:FixFlex fixFirst="false">
-				<l:fixContent> -->
                 <Panel accessibleRole="Region" class="sapUiNoContentPadding" backgroundDesign="Transparent">
                     <l:BlockLayout>
                         <l:BlockLayoutRow>
@@ -665,7 +659,7 @@
                                             backgroundColorShade="ShadeB">
                                         <!-- <VBox alignItems="End"> -->
                                         <VBox alignItems="Center" justifyContent="Center">
-                                            <Image src="./images/cf.png" width="100%"></Image>
+                                            <Image src="./dist/images/cf.png" width="100%"></Image>
                                         </VBox>
                                         <!-- </VBox> -->
                                     </l:BlockLayoutCell>
@@ -673,7 +667,7 @@
                                             backgroundColorSet="ColorSet10"
                                             backgroundColorShade="ShadeD">
                                         <VBox alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTopBottom">
-                                            <Image src="./images/kyma.png" width="100%"></Image>
+                                            <Image src="./dist/images/kyma.png" width="100%"></Image>
                                         </VBox>
                                     </l:BlockLayoutCell>
                                     <l:BlockLayoutCell
@@ -681,7 +675,7 @@
                                             backgroundColorShade="ShadeE">
                                         <!-- <VBox alignItems="Start"> -->
                                             <VBox alignItems="Center" justifyContent="Center">
-                                            <Image src="./images/abap.png" width="100%"></Image>
+                                            <Image src="./dist/images/abap.png" width="100%"></Image>
                                             </VBox>
                                         <!-- </VBox> -->
                                     </l:BlockLayoutCell>
@@ -804,19 +798,6 @@
                                         backgroundColorSet="ColorSet10"
                                         backgroundColorShade="ShadeE">
                                         <VBox alignItems="Center">
-                                                <Title width="100%"
-                                                    text="Book a workshop for BTP Governance &amp; Architecture"
-                                                    level="H3"
-                                                    titleStyle="H3"
-                                                    wrapping="true"
-                                                    class="sapUiMediumMarginBottom makeWhite"/>
-                                                <Text
-                                                        text="The Business Technology Platform Governance &amp; Architecture workshop is tailored for Basis Administrators and (Solution) Architects within companies. To schedule a session, simply click 'Book Me' below. I look forward to empowering your team with valuable insights and strategies:"
-                                                        class="sapUiSmallMarginBottom"/>
-                                                <Button text="Book me" type="Emphasized" press=".onBook('btp')"></Button>
-                                                <Text
-                                                        text="After booking, I'll reach out to you by email to discuss further details. From here on we'll grow as we go together!"
-                                                        class="sapUiSmallMarginTopBottom"/>
                                         </VBox>
                                     </l:BlockLayoutCell>
                                 </l:BlockLayoutRow>
@@ -824,18 +805,7 @@
                         </Panel>
                     </l:VerticalLayout>
                 </l:Grid>
-				<!-- </l:fixContent>
-			</l:FixFlex> -->
             </l:VerticalLayout>
-            <!-- </Panel> -->
         </f:content>
-        <!-- <f:footer>
-            <OverflowToolbar >
-                <ToolbarSpacer ></ToolbarSpacer>
-                    <Text text="Running on BTP"></Text>
-                <ToolbarSpacer ></ToolbarSpacer>
-            </OverflowToolbar>
-        </f:footer> -->
     </f:DynamicPage>
-    <!-- </Page> -->
 </mvc:View>

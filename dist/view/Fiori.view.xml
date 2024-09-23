@@ -787,19 +787,6 @@
                             backgroundColorSet="ColorSet10"
                             backgroundColorShade="ShadeE">
                             <VBox alignItems="Center">
-                                    <Title width="100%"
-                                        text="Book a workshop for a Central Launchpad / WorkZone"
-                                        level="H3"
-                                        titleStyle="H3"
-                                        wrapping="true"
-                                        class="sapUiMediumMarginBottom makeWhite"/>
-                                    <Text
-                                            text="The Central Fiori Launchpad &amp; WorkZone workshop is tailored for Basis Administrators and (Solution) Architects within companies. To schedule a session, simply click 'Book Me' below. I look forward to empowering your team with valuable insights and strategies:"
-                                            class="sapUiSmallMarginBottom"/>
-				                    <Button text="Book me" type="Emphasized" press=".onBook('fiori')"></Button>
-                                    <Text
-                                            text="After booking, I'll reach out to you by email to discuss further details. From here on we'll grow as we go together!"
-                                            class="sapUiSmallMarginTopBottom"/>
                             </VBox>
                         </l:BlockLayoutCell>
                     </l:BlockLayoutRow>
@@ -810,12 +797,5 @@
              </l:VerticalLayout>
             <!-- </Panel> -->
         </f:content>
-        <f:footer>
-            <OverflowToolbar >
-                <ToolbarSpacer ></ToolbarSpacer>
-                    <Text text="Running on BTP"></Text>
-                <ToolbarSpacer ></ToolbarSpacer>
-            </OverflowToolbar>
-        </f:footer>
     </f:DynamicPage>
 </mvc:View>

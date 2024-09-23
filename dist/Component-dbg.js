@@ -28,7 +28,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/model/json/J
       window.setTimeout(function () {
         var _document$getElementB;
         (_document$getElementB = document.getElementById("loader")) === null || _document$getElementB === void 0 || _document$getElementB.remove();
-      }, 400);
+      }, 200);
       this.setModel(new JSONModel({
         lightMode: true,
         darkMode: false,

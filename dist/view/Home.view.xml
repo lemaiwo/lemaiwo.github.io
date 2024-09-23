@@ -294,87 +294,10 @@
                             backgroundColorSet="ColorSet10"
                             backgroundColorShade="ShadeE">
                             <VBox alignItems="Center">
-                                    <Text
-                                            text="Both workshops are tailored for Basis Administrators and (Solution) Architects within companies. To schedule a session, simply click 'Book Me' below. I look forward to empowering your team with valuable insights and strategies:"
-                                            class="sapUiSmallMarginBottom"/>
-				                    <Button text="Book me" type="Emphasized" press=".onBook()"></Button>
-                                    <Text
-                                            text="After booking, I'll reach out to you by email to discuss further details. From here on we'll grow as we go together!"
-                                            class="sapUiSmallMarginTopBottom"/>
                             </VBox>
                         </l:BlockLayoutCell>
                     </l:BlockLayoutRow>
                 </l:BlockLayout>
-                <!-- </l:Grid> -->
-                <!-- <l:BlockLayout>
-                    <l:BlockLayoutRow>
-                        <l:BlockLayoutCell
-                            backgroundColorSet="ColorSet10"
-                            backgroundColorShade="ShadeB">
-                            <l:Grid
-                                defaultSpan="L6 M12 S12"
-                                hSpacing="0"
-                                vSpacing="0">
-                                <VBox alignItems="Center"></VBox>
-                                <l:VerticalLayout
-                                        width="100%">
-                                    <Text
-                                            text="I can help you With Governance, Guidenance/Mentoring and deep technical knowledge in the following topics:"
-                                            class="sapUiSmallMarginBottom"/>
-                                    <HBox>
-                                        <core:Icon
-                                                src="sap-icon://cloud"
-                                                size="1rem"
-                                                color="Default"
-                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                        <Title width="100%"
-                                            level="H5"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginTopBottom">
-                                            <Link text="Business Technology Platform (BTP)" press=".onNavigateTo('btp')" />
-                                        </Title>
-                                    </HBox><HBox>
-                                        <core:Icon
-                                                src="sap-icon://desktop-mobile"
-                                                size="1rem"
-                                                color="Default"
-                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                        <Title width="100%"
-                                            level="H5"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginTopBottom">
-                                            <Link text="Fiori Launchpad and WorkZone" press=".onNavigateTo('fiori')" />
-                                        </Title>
-                                    </HBox><HBox>
-                                        <core:Icon
-                                                src="sap-icon://syntax"
-                                                size="1rem"
-                                                color="Default"
-                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                        <Title width="100%"
-                                            level="H5"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginTopBottom">
-                                            <Link text="Cloud Application Programming model" press=".onNavigateTo('cap')" />
-                                        </Title>
-                                    </HBox><HBox>
-                                        <core:Icon
-                                                src="sap-icon://sap-ui5"
-                                                size="1rem"
-                                                color="Default"
-                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                        <Title width="100%"
-                                            level="H5"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginTopBottom">
-                                            <Link text="SAPUI5" press=".onNavigateTo('sapui5')" />
-                                        </Title>
-                                    </HBox>
-                                </l:VerticalLayout>
-                            </l:Grid>
-                        </l:BlockLayoutCell>
-                    </l:BlockLayoutRow>
-                </l:BlockLayout> -->
             </Panel>
              </l:VerticalLayout>
                 </l:Grid>

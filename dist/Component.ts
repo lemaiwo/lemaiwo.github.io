@@ -25,7 +25,7 @@ export default class Component extends BaseComponent {
         // $(".loader-icon").removeClass("spinning-cog").addClass("shrinking-cog");
         // $(".loader-background").fadeOut();
         // $(".loader-text").fadeOut();
-        window.setTimeout(function () { document.getElementById("loader")?.remove(); }, 400);
+        window.setTimeout(function () { document.getElementById("loader")?.remove(); }, 200);
         this.setModel(new JSONModel({ lightMode: true, darkMode: false, selectedTab: "home" }), "app");
         // enable routing
         this.getRouter().initialize();

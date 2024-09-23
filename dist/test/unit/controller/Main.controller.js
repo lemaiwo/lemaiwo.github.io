@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["be/wl/lemtech/controller/Home.controller"],function(e){"use strict";function t(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}var n=t(e);QUnit.module("Main Controller");QUnit.test("I should test the Main controller",function(e){var t=new n("Main");t.onInit();e.ok(t)})});
+//# sourceMappingURL=Main.controller.js.map
