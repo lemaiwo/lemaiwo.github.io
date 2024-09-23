@@ -1,0 +1,175 @@
+{
+    "_version": "1.58.0",
+    "sap.app": {
+        "id": "be.wl.lemtech.wouter",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.11.2",
+            "toolsId": "a6fe49a5-2f14-4a7f-b7d0-3e5eba7e1fe5"
+        },
+        "dataSources": {
+            "mainService": {
+                "uri": "odata/v4/catalog/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "4.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": false,
+        "dependencies": {
+            "minUI5Version": "1.120.3",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.f": {},
+                "sap.suite.ui.generic.template": {},
+                "sap.ui.comp": {},
+                "sap.ui.generic.app": {},
+                "sap.ui.table": {},
+                "sap.ushell": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "be.wl.lemtech.wouter.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true,
+                    "groupProperties": {
+                        "book": {
+                            "submit": "API"
+                        }
+                    },
+                    "updateGroupId": "book"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "be.wl.lemtech.wouter.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false,
+                "transition": "show"
+            },
+            "routes": [
+                {
+                    "name": "home",
+                    "pattern": "",
+                    "target": [
+                        "home"
+                    ]
+                },
+                {
+                    "name": "btp",
+                    "pattern": "btp",
+                    "target": [
+                        "btp"
+                    ]
+                },
+                {
+                    "name": "fiori",
+                    "pattern": "fiori",
+                    "target": [
+                        "fiori"
+                    ]
+                },
+                {
+                    "name": "me",
+                    "pattern": "me",
+                    "target": [
+                        "me"
+                    ]
+                }
+            ],
+            "targets": {
+                "home": {
+                    "viewType": "XML",
+                    "clearControlAggregation": false,
+                    "viewId": "home",
+                    "viewName": "Home"
+                },
+                "btp": {
+                    "viewType": "XML",
+                    "clearControlAggregation": false,
+                    "viewId": "btp",
+                    "viewName": "BTP"
+                },
+                "fiori": {
+                    "viewType": "XML",
+                    "clearControlAggregation": false,
+                    "viewId": "fiori",
+                    "viewName": "Fiori"
+                },
+                "me": {
+                    "viewType": "XML",
+                    "clearControlAggregation": false,
+                    "viewId": "me",
+                    "viewName": "AboutMe"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "be.wl.lemtech.wouter.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "App"
+        }
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "be.wl.lemtech.wouter"
+    }
+}

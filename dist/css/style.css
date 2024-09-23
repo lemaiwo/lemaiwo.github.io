@@ -1,0 +1,86 @@
+.headlineCell {
+	text-align: center !important;
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+.makeWhite {
+	color: #fff;
+}
+.scrollCorrection .sapTntToolPageContentWrapper{
+	margin-bottom: .5625rem !important;
+}
+.welcomeImageTextHeadline {
+	font-size: 3rem;
+	color: #fff;
+	text-shadow: 0 0 0.125rem #000;
+}
+.sapUiDemokitLandingImageCell {
+	line-height: 0;
+}
+.welcomeImageCell {
+	position:relative;
+}
+.welcomeImageTextLayout {
+	position:absolute;
+	top: 70%;
+	left:0;
+	margin-top: -7rem;
+}
+
+.welcomeImageTextLayout .sapUiVltCell {
+	text-align: center;
+}
+.welcomeImage {
+    height: 100%;
+}
+
+/* Special case with initial page having different aspect ratio according to screen size */
+.welcomeImageCell:before {
+    content: '';
+    display: block;
+    float: left;
+}
+
+.welcomeImageCell:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 64rem) {
+	.welcomeImageCell:before {
+		/* Aspect ratio on a smaller display differs */
+        padding-top: 34%;
+	}
+}
+
+@media (max-width: 64rem) and (orientation: portrait) {
+    .welcomeImageCell:before {
+		/* Aspect ratio on a landscape mode differs */
+        padding-top: 40%;
+	}
+}
+
+@media (min-width: 64rem) {
+    .welcomeImageCell:before {
+		/* Keeping aspect ratio according to the image set */
+        padding-top: 19.5%;
+	}
+}
+
+/* FireFox does not handle aspect ratio optimization so this must be disabled for it only by resetting the element position */
+html[data-sap-ui-browser^="ff"] .welcomeImage {
+	position: relative;
+}
+/* .sapUiMedia-Std-Tablet .sapUiDemokit .sapUiHomePage .headlineCell,
+.sapUiMedia-Std-Phone .sapUiDemokit .sapUiHomePage .headlineCell {
+	padding-top: 1.625rem;
+	padding-bottom: 1.625rem;
+} */
+
+/* .sapUiMedia-Std-Tablet .sapUiDemokit .sapUiHomePage .headlineCell .sapMTitleStyleH1,
+.sapUiMedia-Std-Phone .sapUiDemokit .sapUiHomePage .headlineCell .sapMTitleStyleH1 {
+	font-size: 1.25rem;
+} */

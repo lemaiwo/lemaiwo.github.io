@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+  <Dialog title="Your Cookie Settings" busyIndicatorDelay="0" busy="{book>/busy}" contentWidth="550px">
+    <content>
+        <Text text="This website uses cookies to improve your experience. By continuing to use this site, you consent to use the cookies of this website." class="sapUiSmallMargin"></Text>
+    </content>
+    <beginButton>
+      <Button type="Emphasized" text="Accept all" press=".onAccept" />
+    </beginButton>
+    <endButton>
+      <Button text="Reject all" press=".onReject" />
+    </endButton>
+  </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wouter Lemaire - SAP Solution Architect, Developer &amp; part of SAP Mentors</title>
+	<style>
+		html,
+		body,
+		body>div,
+		#container,
+		#container-uiarea {
+			height: 100%;
+		}
+	</style>
+
+	<style>
+		.overlay-loader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1000;
+		}
+
+		.overlay-loader .loader-background {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: #fff;
+			-webkit-transition: background-color .2s 0s linear, right .2s .3s ease-out;
+			-moz-transition: background-color .2s 0s linear, right .2s .3s ease-out;
+			-ms-transition: background-color .2s 0s linear, right .2s .3s ease-out;
+			-o-transition: background-color .2s 0s linear, right .2s .3s ease-out;
+			transition: background-color .2s 0s linear, right .2s .3s ease-out;
+		}
+
+		.overlay-loader .loader-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -128px 0 0 -128px;
+			width: 256px;
+			height: 256px;
+		}
+
+		.overlay-loader .loader-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: 140px 0 0 -40px;
+			font-size: 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #000;
+		}
+
+		.overlay-loader .loader-icon.spinning-cog {
+			-webkit-animation: spinning-cog 1.3s infinite ease;
+			-moz-animation: spinning-cog 1.3s infinite ease;
+			-ms-animation: spinning-cog 1.3s infinite ease;
+			-o-animation: spinning-cog 1.3s infinite ease;
+			animation: spinning-cog 1.3s infinite ease;
+		}
+
+		@-webkit-keyframes spinning-cog {
+			0% {
+				-webkit-transform: rotate(0deg)
+			}
+
+			20% {
+				-webkit-transform: rotate(-45deg)
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg)
+			}
+		}
+
+		@-moz-keyframes spinning-cog {
+			0% {
+				-moz-transform: rotate(0deg)
+			}
+
+			20% {
+				-moz-transform: rotate(-45deg)
+			}
+
+			100% {
+				-moz-transform: rotate(360deg)
+			}
+		}
+
+		@-o-keyframes spinning-cog {
+			0% {
+				-o-transform: rotate(0deg)
+			}
+
+			20% {
+				-o-transform: rotate(-45deg)
+			}
+
+			100% {
+				-o-transform: rotate(360deg)
+			}
+		}
+
+		@keyframes spinning-cog {
+			0% {
+				transform: rotate(0deg)
+			}
+
+			20% {
+				transform: rotate(-45deg)
+			}
+
+			100% {
+				transform: rotate(360deg)
+			}
+		}
+
+		@-webkit-keyframes shrinking-cog {
+			0% {
+				-webkit-transform: scale(1)
+			}
+
+			20% {
+				-webkit-transform: scale(1.2)
+			}
+
+			100% {
+				-webkit-transform: scale(0)
+			}
+		}
+
+		@-moz-keyframes shrinking-cog {
+			0% {
+				-moz-transform: scale(1)
+			}
+
+			20% {
+				-moz-transform: scale(1.2)
+			}
+
+			100% {
+				-moz-transform: scale(0)
+			}
+		}
+
+		@-o-keyframes shrinking-cog {
+			0% {
+				-o-transform: scale(1)
+			}
+
+			20% {
+				-o-transform: scale(1.2)
+			}
+
+			100% {
+				-o-transform: scale(0)
+			}
+		}
+
+		@keyframes shrinking-cog {
+			0% {
+				transform: scale(1)
+			}
+
+			20% {
+				transform: scale(1.2)
+			}
+
+			100% {
+				transform: scale(0)
+			}
+		}
+
+		.overlay-loader .loader-icon.shrinking-cog {
+			-webkit-animation: shrinking-cog .3s 1 ease forwards;
+			-moz-animation: shrinking-cog .3s 1 ease forwards;
+			-ms-animation: shrinking-cog .3s 1 ease forwards;
+			-o-animation: shrinking-cog .3s 1 ease forwards;
+			animation: shrinking-cog .3s 1 ease forwards;
+		}
+	</style>
+	<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer>
+	</script>
+	<script>
+		// Define dataLayer and the gtag function.
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		const getCookie = (cookieName) => {
+			const cookies = document.cookie.split(";");
+
+			// eslint-disable-next-line no-param-reassign
+			cookieName = cookieName + "=";
+			for (let cookie of cookies) {
+				cookie = cookie.trim();
+				if (cookie.indexOf(cookieName) === 0) {
+					return cookie.substring(cookieName.length, cookie.length);
+				}
+			}
+			return "";
+		}
+		const allowCookies = getCookie("allow_required_cookies") || false;
+		window["sap-ui-config"] = {
+			theme: getCookie("mode") || "sap_horizon"
+		};
+		// Set default consent to 'denied' as a placeholder
+		// Determine actual values based on your own requirements
+		gtag('consent', 'default', {
+			'ad_storage': allowCookies ? 'granted' : 'denied',
+			'ad_user_data': allowCookies ? 'granted' : 'denied',
+			'ad_personalization': allowCookies ? 'granted' : 'denied',
+			'analytics_storage': allowCookies ? 'granted' : 'denied'
+		});
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QBVQS1WDP"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-2QBVQS1WDP', {
+			send_page_view: false
+		});
+	</script>
+	<script id="sap-ui-bootstrap" src="resources/sap-ui-core.js"
+		data-sap-ui-resourceroots='{
+            "be.wl.lemtech.wouter": "./"
+        }' data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true" data-sap-ui-frameOptions="trusted"></script>
+</head>
+
+<body class="sapUiBody sapUiSizeCompact" id="content">
+	<div data-sap-ui-component data-name="be.wl.lemtech.wouter" data-id="container"
+		data-settings='{"id" : "be.wl.lemtech.wouter"}' data-handle-validation="true"></div>
+
+	<div id="loader" class="overlay-loader">
+		<div class="loader-background"></div>
+		<!--RvhH: To make SVG work with IE (since technically it's a malformed data URI, and IE is being strict), you need to:
+			 - swap ' with "
+			 - URL-encode the SVG string (and since ' is safe and " is not, the encoded string will be shorter)-->
+		<img class="loader-icon spinning-cog" src="./images/logo.png">
+		<div class="loader-text">Loading...</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<mvc:View controllerName="be.wl.lemtech.wouter.controller.AboutMe"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" 
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.f">
+   <f:DynamicPage id="homepage" showFooter="false" class="sapUiNoContentPadding">
+        <f:content>
+            <l:Grid
+                    defaultSpan="XL10 L10 M12 S12"
+                    hSpacing="0"
+                    vSpacing="0">
+                    <VBox alignItems="Center">
+                        <layoutData>
+                            <l:GridData span="XL1 L1 M12 S12"/>
+                        </layoutData>
+                    </VBox>
+            <l:BlockLayout>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeB"
+                            title="">
+                            <VBox alignItems="Center">
+                                <Avatar src="images/image002.jpg" displaySize="Custom" customDisplaySize="20rem" press=".onAvatarPressed" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                    <detailBox>
+                                        <LightBox>
+                                            <LightBoxItem
+                                                    imageSrc="images/image002.jpg"
+                                                    alt="Wouter Lemaire"
+                                                    title="Wouter Lemaire"
+                                                    subtitle="SAP Solution Architect, Developer &amp; part of SAP Mentors">
+                                            </LightBoxItem>
+                                        </LightBox>
+                                    </detailBox>
+                                    <!-- <layoutData>
+                                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                                    </layoutData> -->
+                                </Avatar>
+                                <Title width="100%"
+                                            level="H5"
+                                            titleStyle="H5"
+                                            text="Follow me on:"
+                                            class="sapUiSmallMarginTopBottom">
+                                        </Title>
+                                <HBox >
+                                    <Image src="./images/github.png" width="50px" press=".onOpenFollowMeOn('https://github.com/lemaiwo')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./images/xlogoblack.png" width="50px" press=".onOpenFollowMeOn('https://twitter.com/wouter_lemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./images/linkedin.png" width="50px" press=".onOpenFollowMeOn('https://www.linkedin.com/in/wouterlemaire')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                    <Image src="./images/sap.png" width="100px" press=".onOpenFollowMeOn('https://community.sap.com/t5/user/viewprofilepage/user-id/9863')" class="sapUiTinyMarginBegin sapUiSmallMarginEnd"></Image>
+                                </HBox>
+                            </VBox>
+                    </l:BlockLayoutCell>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeC"
+                            title="Bio">
+                                <l:VerticalLayout
+                                        width="100%">
+                                    <Text
+                                            text="Hello, my name is Wouter Lemaire and I'm an independent SAP solution architect, developer &amp; consultant. I started more than 10 years ago when ABAP WebDynpro was like Fiori today. As soon as UI5 came around the corner, I started building Fiori applications and pushed UI5 to its limits. Since then I have been following the latest SAP Innovations which led me to Business Technology Platform (BTP) from in the early days when it still was called HANA Cloud Platform. This made me grow from a developer into an Solution Architect which I still love to comebine. As a developer and architect I focus on BTP, Fiori/WorkZone, Cloud Application Programming model, UI5 and ABAP. My goal is to share my experience as a developer and architect to help customers with:"
+                                            class="sapUiSmallMarginBottom"/>
+                                    <HBox>
+                                        <core:Icon
+                                                src="sap-icon://cloud"
+                                                size="1rem"
+                                                color="Default"
+                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
+                                        <Title width="100%"
+                                            level="H5"
+                                            titleStyle="H5"
+                                            class="sapUiSmallMarginTopBottom">
+                                            <Link text="Business Technology Platform (BTP)" press=".onNavigateTo('btp')" />
+                                        </Title>
+                                    </HBox><HBox>
+                                        <core:Icon
+                                                src="sap-icon://desktop-mobile"
+                                                size="1rem"
+                                                color="Default"
+                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
+                                        <Title width="100%"
+                                            level="H5"
+                                            titleStyle="H5"
+                                            class="sapUiSmallMarginTopBottom">
+                                            <Link text="Fiori Launchpad &amp; WorkZone" press=".onNavigateTo('fiori')" />
+                                        </Title>
+                                    </HBox><HBox>
+                                        <core:Icon
+                                                src="sap-icon://syntax"
+                                                size="1rem"
+                                                color="Default"
+                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
+                                        <Title width="100%"
+                                            level="H5"
+                                            titleStyle="H5"
+                                            text="Cloud Application Programming model"
+                                            class="sapUiSmallMarginTopBottom">
+                                            <!-- <Link text="Cloud Application Programming model" press=".onNavigateTo('cap')" /> -->
+                                        </Title>
+                                    </HBox><HBox>
+                                        <core:Icon
+                                                src="sap-icon://sap-ui5"
+                                                size="1rem"
+                                                color="Default"
+                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
+                                        <Title width="100%"
+                                            level="H5"
+                                            text="SAPUI5 &amp; Fiori Elements"
+                                            titleStyle="H5"
+                                            class="sapUiSmallMarginTopBottom">
+                                            <!-- <Link text="SAPUI5" press=".onNavigateTo('sapui5')" /> -->
+                                        </Title>
+                                    </HBox><HBox>
+                                        <core:Icon
+                                                src="sap-icon://syntax"
+                                                size="1rem"
+                                                color="Default"
+                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
+                                        <Title width="100%"
+                                            level="H5"
+                                            titleStyle="H5"
+                                            text="ABAP RESTful Application Programming"
+                                            class="sapUiSmallMarginTopBottom">
+                                            <!-- <Link text="Cloud Application Programming model" press=".onNavigateTo('cap')" /> -->
+                                        </Title>
+                                    </HBox>
+                                </l:VerticalLayout>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeD"
+                            title="SAP Certified">
+                                <List >
+                                    <items>
+                                        <StandardListItem
+                                            title="SAP Fiori Application Developer"
+                                            description="C_FIORDEV_22 - Jan 2023"
+                                            icon="./images/certfiori.png"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://www.credly.com/badges/29e525b7-f712-4ed0-8ccb-8d04da57d90f')"/>
+                                        <StandardListItem
+                                            title="SAP Cloud SDK Extensibility Developer 2022"
+                                            description="C_S4CDK_2022 - Dec 2022"
+                                            icon="./images/cloudsdkcert.png"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://www.credly.com/badges/f2fdd537-d40b-4204-9756-3eb9dad47e60')"/>
+                                        <StandardListItem
+                                            title="SAP HANA Cloud 1.0"
+                                            description="Apr 2022"
+                                            icon="./images/hanacloudcert.png"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://www.credly.com/badges/dd8aa64f-1562-4a1b-b900-4bb93cdfa32f')"/>
+                                        <StandardListItem
+                                            title="SAP Extension Suite"
+                                            description="Jan 2022"
+                                            icon="./images/extcert.png"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://www.credly.com/badges/dbdd5d3b-dc5a-4477-8019-7c32c23cdab7')"/>
+                                    </items>
+                                </List>
+                    </l:BlockLayoutCell>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeE"
+                            title="Experience">
+                                <List backgroundDesign="Solid">
+                                    <items>
+                                    	<CustomListItem >
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="BTP Expert" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop">
+                                                        <Text text="Ypto" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/ypto.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>
+                                    	<CustomListItem>
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="BTP Architect" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop">
+                                                        <Text text="European Commission" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/ec.png"  class="sapUiSmallMarginEnd"/>
+                                            </FlexBox>
+                                        </CustomListItem>
+                                    	<CustomListItem>
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="BTP and Cloud Application Programming model Expert" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop">
+                                                        <Text text="Bayer" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/bayer.png"  class="sapUiSmallMarginEnd"/>
+                                            </FlexBox>
+                                        </CustomListItem>
+                                    	<CustomListItem>
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="Fiori Expert" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop">
+                                                        <Text text="Fluvius" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/fluvius.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>
+                                    	<CustomListItem>
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="BTP and Fiori Architect" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop ">
+                                                        <Text text="Elia Group" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/eliagroup.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>   
+                                    </items>
+                                </List>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeB"
+                            title="SAP Community - Latest blog posts">
+                                <List >
+                                    <items>
+                                        <StandardListItem
+                                            title="Upload attachments in a Freestyle UI5 and CAP app"
+                                            description="December 19, 2023"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://blogs.sap.com/?p=1895186')"/>
+                                        <StandardListItem
+                                            title="Extending legacy Fiori apps in BAS"
+                                            description="November 13, 2023"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://blogs.sap.com/?p=1876919')"/>
+                                        <StandardListItem
+                                            title="Connecting UI5 Components in BTP CloudFoundry in the same space"
+                                            description="November 09, 2023"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://blogs.sap.com/?p=1872088')"/>
+                                        <StandardListItem
+                                            title="Connecting UI5 Components in BTP CloudFoundry across spaces"
+                                            description="November 09, 2023"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://blogs.sap.com/?p=1872048')"/>
+                                        <StandardListItem
+                                            title="Connecting UI5 TypeScript Components locally"
+                                            description="November 09, 2023"
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://blogs.sap.com/?p=1872034')"/>
+                                        <StandardListItem
+                                            title="More blog posts @ SAP Community"
+                                            description=""
+                                            iconDensityAware="false"
+                                            iconInset="false" 
+                                            type="Active"
+                                            press=".onOpenURL('https://people.sap.com/wouter.lemaire#content:blogposts')"/>
+                                    </items>
+                                </List>
+                    </l:BlockLayoutCell>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeC"
+                            title="Speaker @ SAP events">
+                                <List >
+                                    <items>
+                                    	<CustomListItem type="Active" press=".onOpenURL('https://sitbe.fiddle.be/')">
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="SAP Inside Track Belgium 2023 (Speaker &amp; Organizer)" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop ">
+                                                        <Text text="Next-Gen UI5 Control Development" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/sitbe.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>   
+                                    	<CustomListItem type="Active" press=".onOpenURL('https://recap-conf.dev/')">
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="re>≡CAP 2023" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop ">
+                                                        <Text text="CAP Advanced Programming model" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/recap.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>   
+                                    	<CustomListItem type="Active" press=".onOpenURL('https://openui5.org/ui5con/germany2023/')">
+                                            <FlexBox alignItems="Start" justifyContent="SpaceBetween" class="sapUiSmallMarginTopBottom" width="100%">
+                                                <VBox class="sapUiSmallMarginBegin" >
+                                                    <VBox class="sapMSLITitle ">
+                                                        <Text text="UI5Con2023" class="sapMSLITitle"/>
+                                                    </VBox>
+                                                    <VBox class="sapMSLIDescription sapUiTinyMarginTop ">
+                                                        <Text text="Next-Gen UI5 Control Development" class="sapMSLIDescription"/>
+                                                    </VBox>
+                                                </VBox>
+                                                <Image height="40px" src="./images/UI5con.png" class="sapUiSmallMarginEnd" />
+                                            </FlexBox>
+                                        </CustomListItem>   
+                                    </items>
+                                </List>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+            </l:BlockLayout>
+            </l:Grid>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

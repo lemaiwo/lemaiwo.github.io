@@ -1,0 +1,87 @@
+<mvc:View controllerName="be.wl.lemtech.wouter.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	height="100%">
+	<tnt:ToolPage id="toolPage" class="scrollCorrection">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Avatar src="images/image002.jpg" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow"/>
+					</layoutData>
+				</Avatar>
+				<ToolbarSpacer />
+				<Title level="H1" text="Wouter Lemaire" wrapping="false">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="Disappear"/>
+					</layoutData>
+				</Title>
+				<Text text="SAP Solution Architect, Developer &amp; part of SAP Mentors" wrapping="false" id="secondTitle" visible="{= !${device>/system/phone} }">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="Disappear"/>
+					</layoutData>
+				</Text>
+				<ToolbarSpacer />
+				<Button text="Book me" type="Emphasized" press=".onBook()"></Button>
+				<Button icon="sap-icon://hint" press=".onInfo"></Button>
+				<Button icon="sap-icon://light-mode" visible="{app>/darkMode}" press=".onSwitchTheme"/>
+				<Button icon="sap-icon://dark-mode" visible="{app>/lightMode}" press=".onSwitchTheme"/>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:subHeader>
+			<tnt:ToolHeader>
+				<IconTabHeader
+						selectedKey="{app>/selectedTab}"
+						select=".navigateToSection"
+						mode="Inline">
+					<items>
+						<IconTabFilter
+							id="welcomeTab"
+							key="home"
+							icon="sap-icon://home"
+							text="Home">
+						</IconTabFilter>
+						<IconTabFilter
+							id="help"
+							key="help"
+							icon="sap-icon://sys-help"
+							text="How can I help you?">
+							<items>
+								<IconTabFilter
+									id="btp"
+									key="btp"
+									icon="sap-icon://cloud"
+									text="BTP Governance &amp; Architecture">
+								</IconTabFilter>
+								<IconTabFilter
+									id="fiori"
+									key="fiori"
+									icon="sap-icon://desktop-mobile"
+									text="Central Launchpad / WorkZone">
+								</IconTabFilter>
+							</items>
+						</IconTabFilter>
+						<IconTabFilter
+							id="me"
+							key="me"
+							icon="sap-icon://learning-assistant"
+							text="About me">
+						</IconTabFilter>
+					</items>
+				</IconTabHeader>
+			</tnt:ToolHeader>
+		</tnt:subHeader>
+		<tnt:mainContents>
+			<ScrollContainer
+				width="100%"
+				height="100%"
+				horizontal="false"
+				vertical="false">
+
+				<App id="app" autoFocus="false" />
+			</ScrollContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

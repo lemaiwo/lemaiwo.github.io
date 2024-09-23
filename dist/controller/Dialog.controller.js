@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/Fragment","./Base.controller"],function(e,t){"use strict";function r(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}var n=r(t);var u=n.extend("be.wl.lemtech.wouter.controller.Dialog",{fragmentById:function t(r,n,u){return sap.ui.getCore().byId(r.createId(e.createId(n,u)))}});return u});
+//# sourceMappingURL=Dialog.controller.js.map

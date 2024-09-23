@@ -1,0 +1,841 @@
+<mvc:View controllerName="be.wl.lemtech.wouter.controller.BTP"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	height="100%" >
+    
+	<!-- <Page
+		enableScrolling="false"
+		showFooter="false"
+		showNavButton="false" showHeader="false"> -->
+    <f:DynamicPage id="btppage" class="sapUiNoContentPadding" >
+        <f:content>
+            <l:VerticalLayout width="100%">
+            <!-- <l:FixFlex fixFirst="false">
+				<l:fixContent> -->
+                <Panel accessibleRole="Region" class="sapUiNoContentPadding" backgroundDesign="Transparent">
+                    <l:BlockLayout>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="sapUiNoContentPadding sapUiDemokitLandingImageCell welcomeImageCell">
+                                <Image
+                                    src="images/goldengatebtp.jpg"
+                                    width="100%"
+                                    class="welcomeImage"
+                                    densityAware="false"/>
+                                <l:VerticalLayout
+                                    id="landingImageHeadline"
+                                    visible="true"
+                                    width="100%"
+                                    class="welcomeImageTextLayout">
+                                    <Text class="welcomeImageTextHeadline"
+                                        text="Your guide to Business Technology Platform (BTP)"
+                                        width="100%"
+                                        textAlign="Center"/>
+                                </l:VerticalLayout>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                    </l:BlockLayout>
+                </Panel>
+                <l:Grid
+                    defaultSpan="XL8 L10 M12 S12"
+                    hSpacing="0"
+                    vSpacing="0">
+                    <VBox alignItems="Center">
+                        <layoutData>
+                            <l:GridData span="XL2 L1 M12 S12"/>
+                        </layoutData>
+                    </VBox>
+                    <l:VerticalLayout width="100%">
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Providing Assitance &amp; Guidance"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <FlexBox
+                                alignItems="Start"
+                                justifyContent="Center"
+                                class="sapUiMediumMarginTop">
+                                <!-- <VBox width="80rem"> -->
+                                    <!-- <HBox > -->
+                                        <l:Grid 
+                                            defaultSpan="XL4 L6 M6 S12"
+                                            hSpacing="1"
+                                            vSpacing="0" 
+                                            width="100%" >
+                                            <HBox width="100%" justifyContent="Center">
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://media-play" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="Getting Started"></Title>
+                                                        <Text text="Help you starting with BTP in no time by:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Introducing you to BTP"
+                                                                class=""/>
+                                                        </HBox><HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Defining your BTP Landscape"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Setting up your BTP Landscape"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                            <HBox width="100%" justifyContent="Center">
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://learning-assistant" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="Mentoring"></Title>
+                                                        <Text text="I'll be your personal BTP mentor by:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Sharing my knowledge"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Sharing my experience"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Training your BTP team"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                            <HBox width="100%" justifyContent="Center">
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://folder" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="Organizing BTP"></Title>
+                                                        <Text text="I can guide you to setup your BTP landscape to your needs using:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Directories"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Subaccounts"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Spaces"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                                
+                                            </HBox>
+                                            <HBox width="100%" justifyContent="Center">
+                                        <!-- </l:Grid> -->
+                                    <!-- </HBox>
+                                    <HBox > -->
+                                        <!-- <l:Grid
+                                            defaultSpan="L4 M4 S12"
+                                            hSpacing="0"
+                                            vSpacing="0"> -->
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://official-service" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="BTP Governance"></Title>
+                                                        <Text text="Based on hands-on experience I can assist you with your BTP Governance:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Best Practices"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Recommendations"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Naming Conventions"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Responsibilities"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            
+                                            </HBox>
+                                            <HBox width="100%" justifyContent="Center">
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://shield" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="BTP Security"></Title>
+                                                        <Text text="Going to Cloud makes companies more vulnerable. I'll make sure you do this in the most secure way possible by focussing on:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Authentication"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Authorizations"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                            <HBox width="100%" justifyContent="Center">
+                                                <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                                    <VBox justifyContent="Start" alignItems="Center">
+                                                        <Avatar src="sap-icon://combine" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                        </Avatar>
+                                                    </VBox>
+                                                    <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                        <Title text="BTP Integration"></Title>
+                                                        <Text text="BTP is designed to integrate with Cloud and On-Premise to close the gap! I can help you to connect it with:"></Text>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="On-Premise systems using the Cloud Connector"
+                                                                class=""/>
+                                                        </HBox>
+                                                        <HBox>
+                                                            <core:Icon
+                                                                    src="sap-icon://accept"
+                                                                    size="1rem"
+                                                                    color="Default"
+                                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                            <Text width="100%"
+                                                                text="Any SAP Cloud Solution you need in BTP"
+                                                                class=""/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                        </l:Grid>
+                                    <!-- </HBox> -->
+                                <!-- </VBox> -->
+                            </FlexBox>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding" >
+                            <!-- <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Building Applications"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar> -->
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeB">
+                                        <VBox alignItems="Center">
+                                                <Title width="100%"
+                                                    text="Applications &amp; Extensions"
+                                                    level="H3"
+                                                    titleStyle="H3"
+                                                    class="sapUiMediumMarginBottom"/>
+                                                <Text
+                                                        text="BTP is designed for extending SAP Cloud solutions and SAP On-Premise systems by building applications to keep your core clean! As a developer, I can build applications in BTP but I can also help you and your team building applications in BTP to make extensions on any of your SAP Cloud solutions or On-Premise systems for adapting it to your needs using: "
+                                                        class="sapUiSmallMarginBottom"/>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeC">
+                                        <!-- <VBox alignItems="End"> -->
+                                        <VBox alignItems="Center">
+                                            <Avatar src="sap-icon://syntax" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                            </Avatar>
+                                            <Title width="100%"
+                                                    level="H5"
+                                                    text="Cloud Application Programming"
+                                                    titleStyle="H5"
+                                                    class="sapUiSmallMarginTop">
+                                                <!-- <Link text="Cloud Application Programming model" press=".onNavigateTo('cap')" /> -->
+                                            </Title>
+                                            <Title width="100%"
+                                                    level="H5"
+                                                    text="model"
+                                                    titleStyle="H5"
+                                                    class="sapUiSmallMarginBottom">
+                                                <!-- <Link text="Cloud Application Programming model" press=".onNavigateTo('cap')" /> -->
+                                            </Title>
+                                        </VBox>
+                                        <!-- </VBox> -->
+                                    </l:BlockLayoutCell>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeD">
+                                        <VBox alignItems="Center">
+                                            <Avatar src="sap-icon://sap-ui5" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                            </Avatar>
+                                            <Title width="100%"
+                                                    level="H5"
+                                                    text="SAPUI5"
+                                                    titleStyle="H5"
+                                                    class="sapUiSmallMarginTop">
+                                                <!-- <Link text="SAPUI5" press=".onNavigateTo('sapui5')" /> -->
+                                                    </Title>
+                                            <Title width="100%"
+                                                    level="H5"
+                                                    text="Fiori Elements"
+                                                    titleStyle="H5"
+                                                    class="sapUiSmallMarginBottom">
+                                                <!-- <Link text="SAPUI5" press=".onNavigateTo('sapui5')" /> -->
+                                                    </Title>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeE">
+                                        <!-- <VBox alignItems="Start"> -->
+                                            <VBox alignItems="Center">
+                                                <Avatar src="sap-icon://syntax" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                                </Avatar>
+                                                <Title width="100%"
+                                                        level="H5"
+                                                        text="ABAP"
+                                                        titleStyle="H5"
+                                                        class="sapUiSmallMarginTop">
+                                                </Title>
+                                                <Title width="100%"
+                                                        level="H5"
+                                                        text="RESTful Application Programming"
+                                                        titleStyle="H5"
+                                                        class="">
+                                                </Title>
+                                                <Title width="100%"
+                                                        level="H5"
+                                                        text="Model"
+                                                        titleStyle="H5"
+                                                        class="sapUiSmallMarginBottom">
+                                                </Title>
+                                            </VBox>
+                                        <!-- </VBox> -->
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell 
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeB"
+                                            class="sapUiNoContentPadding">
+                                        <!-- <FlexBox
+                                            alignItems="Start"
+                                            justifyContent="Center" width="100%"> -->
+                                            <!-- <VBox width="80rem"> -->
+                                                <!-- <HBox > -->
+                                                    <l:Grid 
+                                                        defaultSpan="XL4 L6 M6 S12"
+                                                        hSpacing="1"
+                                                        vSpacing="0" 
+                                                        width="100%"  class="">
+                                                        <HBox width="100%" justifyContent="Center">
+                                                            <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiMediumMarginTopBottom">
+                                                                <VBox justifyContent="Start" alignItems="Center">
+                                                                    <Avatar src="sap-icon://syntax" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                                    </Avatar>
+                                                                </VBox>
+                                                                <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                                    <Title text="Technologies"></Title>
+                                                                    <Text text="BTP offers new type of applications which requires to update the skills of your developer. I can build applications for you but I can also teach and mentor your developers to use the following technologies in BTP:"></Text>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://syntax"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Cloud Application Programming model"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://syntax"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="ABAP RESTful Application Programming Model"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://sap-ui5"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Fiori Elements"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://sap-ui5"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Flexible Programming Model"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://sap-ui5"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Freestyle SAPUI5"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </HBox>
+                                                        </HBox>
+                                                        <HBox width="100%" justifyContent="Center">
+                                                            <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiMediumMarginTopBottom">
+                                                                <VBox justifyContent="Start" alignItems="Center">
+                                                                    <Avatar src="sap-icon://badge" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                                    </Avatar>
+                                                                </VBox>
+                                                                <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                                    <Title text="Code Quality"></Title>
+                                                                    <Text text="It is not because the app looks good that the code looks good. Avoid bugs, keep maintenance low and have happy end users by applying the following:"></Text>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Code Reviews"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Best Practices"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Naming Conventions"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Introducing TypeScript"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Integration testing"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </HBox>
+                                                        </HBox>
+                                                        <HBox width="100%" justifyContent="Center">
+                                                            <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiMediumMarginTopBottom">
+                                                                <VBox justifyContent="Start" alignItems="Center">
+                                                                    <Avatar src="sap-icon://developer-settings" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                                    </Avatar>
+                                                                </VBox>
+                                                                <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                                    <Title text="DevOps"></Title>
+                                                                    <Text text="Avoid suprises when going to production with a good DevOps setup in BTP using:"></Text>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="BTP CI/CD Service"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Automated testing"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="BTP Transport Management Service"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                    <HBox>
+                                                                        <core:Icon
+                                                                                src="sap-icon://accept"
+                                                                                size="1rem"
+                                                                                color="Default"
+                                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                                        <Text width="100%"
+                                                                            text="Integrate with ALM or Charm"
+                                                                            class=""/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </HBox>
+                                                        </HBox>
+                                                    </l:Grid>
+                                                <!-- </HBox> -->
+                                            <!-- </VBox> -->
+                                        <!-- </FlexBox> -->
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding" >
+                            <!-- <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Building Applications"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar> -->
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeC">
+                                        <VBox alignItems="Center">
+                                                <Title width="100%"
+                                                    text="BTP Runtime Strategy"
+                                                    level="H3"
+                                                    titleStyle="H3"
+                                                    class="sapUiMediumMarginBottom"/>
+                                                <Text
+                                                        text="Building applications in BTP provides different runtime possibilities which requires a clear strategy based on your developers! I can provide guidance to choose the best options for your needs: "
+                                                        class="sapUiSmallMarginBottom"/>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeB">
+                                        <!-- <VBox alignItems="End"> -->
+                                        <VBox alignItems="Center" justifyContent="Center">
+                                            <Image src="./images/cf.png" width="100%"></Image>
+                                        </VBox>
+                                        <!-- </VBox> -->
+                                    </l:BlockLayoutCell>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeD">
+                                        <VBox alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTopBottom">
+                                            <Image src="./images/kyma.png" width="100%"></Image>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                    <l:BlockLayoutCell
+                                            backgroundColorSet="ColorSet10"
+                                            backgroundColorShade="ShadeE">
+                                        <!-- <VBox alignItems="Start"> -->
+                                            <VBox alignItems="Center" justifyContent="Center">
+                                            <Image src="./images/abap.png" width="100%"></Image>
+                                            </VBox>
+                                        <!-- </VBox> -->
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Providing Tools &amp; Templates"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            
+                            <FlexBox
+                                alignItems="Start"
+                                justifyContent="Center">
+                                <VBox >
+                                    <HBox >
+                                        <l:Grid
+                                            defaultSpan="L6 M6 S12"
+                                            hSpacing="0"
+                                            vSpacing="0">
+                                            <HBox width="21rem" justifyContent="Start" alignItems="Stretch" class="sapUiLargeMarginTopBottom sapUiLargeMarginBeginEnd sapUiNoContentPadding">
+                                                <VBox justifyContent="Start" alignItems="Center">
+                                                    <Avatar src="sap-icon://wrench" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                    </Avatar>
+                                                </VBox>
+                                                <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                    <Title text="Tooling for"></Title>
+                                                    <!-- <Text text="I can guide you to setup your BTP landscape to you needs using:"></Text> -->
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Link width="100%"
+                                                            text="BTP Service Overview Matrix"
+                                                            href="https://wlcf-development-btpserviceoverview-approuter.cfapps.eu20-001.hana.ondemand.com/recapcapadvancedprogrammingmodelbtpservices/index.html"
+                                                            target="_blank"
+                                                            class=""/>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Text width="100%"
+                                                            text="Migrate apps from NEO to CF"
+                                                            class=""/>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Text width="100%"
+                                                            text="Migrate apps from On-Premise to CF"
+                                                            class=""/>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Text width="100%"
+                                                            text="Update apps config/tooling to the latest version"
+                                                            class=""/>
+                                                    </HBox>
+                                                </VBox>
+                                            </HBox>
+                                            <HBox width="21rem" justifyContent="Start" alignItems="Stretch" class="sapUiLargeMarginTopBottom sapUiLargeMarginBeginEnd sapUiNoContentPadding">
+                                                <VBox justifyContent="Start" alignItems="Center">
+                                                    <Avatar src="sap-icon://sap-box" displaySize="M" displayShape="Circle" showBorder="false" tooltip="Profile">
+                                                    </Avatar>
+                                                </VBox>
+                                                <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                    <Title text="Templates for:"></Title>
+                                                    <!-- <Text text="Based on hands-on experience I can provide recommendation for the following topics to set up your BTP Governance:"></Text> -->
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Text width="100%"
+                                                            text="BTP Applications"
+                                                            class=""/>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <core:Icon
+                                                                src="sap-icon://accept"
+                                                                size="1rem"
+                                                                color="Default"
+                                                                class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                        <Text width="100%"
+                                                            text="Generating BTP Landscape using Terraform"
+                                                            class=""/>
+                                                    </HBox>
+                                                </VBox>
+                                            </HBox>
+                                        </l:Grid>
+                                    </HBox>
+                                </VBox>
+                            </FlexBox>
+                        </Panel>
+                        <Panel class="sapUiNoContentPadding">
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeE">
+                                        <VBox alignItems="Center">
+                                                <Title width="100%"
+                                                    text="Book a workshop for BTP Governance &amp; Architecture"
+                                                    level="H3"
+                                                    titleStyle="H3"
+                                                    wrapping="true"
+                                                    class="sapUiMediumMarginBottom makeWhite"/>
+                                                <Text
+                                                        text="The Business Technology Platform Governance &amp; Architecture workshop is tailored for Basis Administrators and (Solution) Architects within companies. To schedule a session, simply click 'Book Me' below. I look forward to empowering your team with valuable insights and strategies:"
+                                                        class="sapUiSmallMarginBottom"/>
+                                                <Button text="Book me" type="Emphasized" press=".onBook('btp')"></Button>
+                                                <Text
+                                                        text="After booking, I'll reach out to you by email to discuss further details. From here on we'll grow as we go together!"
+                                                        class="sapUiSmallMarginTopBottom"/>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                    </l:VerticalLayout>
+                </l:Grid>
+				<!-- </l:fixContent>
+			</l:FixFlex> -->
+            </l:VerticalLayout>
+            <!-- </Panel> -->
+        </f:content>
+        <!-- <f:footer>
+            <OverflowToolbar >
+                <ToolbarSpacer ></ToolbarSpacer>
+                    <Text text="Running on BTP"></Text>
+                <ToolbarSpacer ></ToolbarSpacer>
+            </OverflowToolbar>
+        </f:footer> -->
+    </f:DynamicPage>
+    <!-- </Page> -->
+</mvc:View>
