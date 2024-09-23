@@ -720,7 +720,7 @@
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Link width="100%"
                                                             text="BTP Service Overview Matrix"
-                                                            href="https://wlcf-development-btpserviceoverview-approuter.cfapps.eu20-001.hana.ondemand.com/recapcapadvancedprogrammingmodelbtpservices/index.html"
+                                                            href="https://btp-services.cfapps.eu20-001.hana.ondemand.com/index.html"
                                                             target="_blank"
                                                             class=""/>
                                                     </HBox>
