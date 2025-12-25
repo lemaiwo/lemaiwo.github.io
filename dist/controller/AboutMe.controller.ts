@@ -33,4 +33,7 @@ export default class AboutMe extends Controller {
     public onOpenFollowMeOn(url:string){
         URLHelper.redirect(url,true);
     }
+    public onContact() {
+        window.open("mailto:wouter@lem-tech.be?subject=Let's Work Together", "_blank");
+    }
 }

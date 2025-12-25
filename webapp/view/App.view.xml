@@ -44,22 +44,28 @@
 							text="Home">
 						</IconTabFilter>
 						<IconTabFilter
-							id="help"
-							key="help"
-							icon="sap-icon://sys-help"
-							text="How can I help you?">
+							id="expertise"
+							key="expertise"
+							icon="sap-icon://curriculum"
+							text="Expertise">
 							<items>
 								<IconTabFilter
 									id="btp"
 									key="btp"
 									icon="sap-icon://cloud"
-									text="BTP Governance &amp; Architecture">
+									text="BTP Architecture">
 								</IconTabFilter>
 								<IconTabFilter
 									id="fiori"
 									key="fiori"
 									icon="sap-icon://desktop-mobile"
-									text="Central Launchpad / WorkZone">
+									text="Fiori &amp; WorkZone">
+								</IconTabFilter>
+								<IconTabFilter
+									id="mcp"
+									key="mcp"
+									icon="sap-icon://connected"
+									text="SAP MCP Server">
 								</IconTabFilter>
 							</items>
 						</IconTabFilter>

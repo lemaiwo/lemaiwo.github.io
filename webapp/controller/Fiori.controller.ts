@@ -23,4 +23,7 @@ export default class Fiori extends Controller {
             page_location: location.href  // Full URL is required.
         });
     }
+    public onContact() {
+        window.open("mailto:wouter@lem-tech.be?subject=Fiori Inquiry", "_blank");
+    }
 }

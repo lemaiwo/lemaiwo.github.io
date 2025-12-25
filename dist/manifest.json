@@ -122,6 +122,12 @@
             "fiori"
           ]
         },{
+          "name": "mcp",
+          "pattern": "mcp",
+          "target": [
+            "mcp"
+          ]
+        },{
           "name": "me",
           "pattern": "me",
           "target": [
@@ -147,6 +153,12 @@
           "clearControlAggregation": false,
           "viewId": "fiori",
           "viewName": "Fiori"
+        },
+        "mcp": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewId": "mcp",
+          "viewName": "MCP"
         },
         "me": {
           "viewType": "XML",

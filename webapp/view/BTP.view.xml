@@ -24,7 +24,7 @@
                                     width="100%"
                                     class="welcomeImageTextLayout">
                                     <Text class="welcomeImageTextHeadline"
-                                        text="Your guide to Business Technology Platform (BTP)"
+                                        text="BTP Architecture &amp; Development"
                                         width="100%"
                                         textAlign="Center"/>
                                 </l:VerticalLayout>
@@ -48,7 +48,7 @@
                             <headerToolbar>
                                 <Toolbar class="headlineCell">
                                     <Title width="100%"
-                                        text="Providing Assitance &amp; Guidance"
+                                        text="What I Can Help You With"
                                         level="H3"
                                         titleStyle="H3"
                                         class="sapUiMediumMarginTopBottom"/>
@@ -790,6 +790,21 @@
                                     </HBox>
                                 </VBox>
                             </FlexBox>
+                        </Panel>
+                        <Panel accessibleRole="Region" backgroundDesign="Translucent" class="sapUiNoContentPadding">
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeC">
+                                        <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
+                                            <Title text="Need help with BTP?" level="H3" class="sapUiSmallMarginBottom"/>
+                                            <Text text="Whether you're just getting started or looking to optimize your existing BTP landscape, I can help." class="sapUiSmallMarginBottom" textAlign="Center"/>
+                                            <Button text="Get in Touch" type="Emphasized" press=".onContact" icon="sap-icon://email" class="sapUiMediumMarginTop"/>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
                         </Panel>
                         <Panel class="sapUiNoContentPadding">
                             <l:BlockLayout>

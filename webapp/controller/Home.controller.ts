@@ -17,6 +17,9 @@ export default class Home extends Controller {
     public onNavigateTo(route: string) {
         this.getRouter().navTo(route);
     }
+    public onContact() {
+        window.open("mailto:wouter@lem-tech.be?subject=Project Inquiry", "_blank");
+    }
     protected getRouter() {
         return UIComponent.getRouterFor(this);
     }

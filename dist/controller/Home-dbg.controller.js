@@ -22,6 +22,9 @@ sap.ui.define(["sap/m/library", "sap/ui/core/UIComponent", "./Base.controller"],
     onNavigateTo: function _onNavigateTo(route) {
       this.getRouter().navTo(route);
     },
+    onContact: function _onContact() {
+      window.open("mailto:wouter@lem-tech.be?subject=Project Inquiry", "_blank");
+    },
     getRouter: function _getRouter() {
       return UIComponent.getRouterFor(this);
     },

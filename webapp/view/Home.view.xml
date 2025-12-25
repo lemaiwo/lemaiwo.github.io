@@ -1,6 +1,6 @@
 <mvc:View controllerName="be.wl.lemtech.wouter.controller.Home"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m" 
+    xmlns="sap.m"
     xmlns:core="sap.ui.core"
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.f">
@@ -19,101 +19,47 @@
             <Panel	accessibleRole="Region"
                     backgroundDesign="Transparent"
                     class="sapUiNoContentPadding">
-                <headerToolbar>
-                    <Toolbar class="headlineCell">
-                        <Title width="100%"
-                            text="Who am I?"
-                            level="H3"
-                            titleStyle="H3"
-                            class="sapUiMediumMarginTopBottom"/>
-                    </Toolbar>
-                </headerToolbar>
                 <l:BlockLayout>
                     <l:BlockLayoutRow>
                         <l:BlockLayoutCell
                                 backgroundColorSet="ColorSet10"
                                 backgroundColorShade="ShadeB">
-                                <!-- <l:Grid
-                                    defaultSpan="L6 M12 S12"
-                                    hSpacing="0"
-                                    vSpacing="0"> -->
-                                    <!-- <VBox alignItems="Center"></VBox> -->
                                     <VBox alignItems="Center">
-                                        <Title width="100%"
-                                                text="Wouter Lemaire"
-                                                level="H3"
-                                                titleStyle="H3"
-                                                class="sapUiSmallMarginTopBottom"/>
-                                        <Avatar src="dist/images/image002.jpg" displaySize="XL" press=".onAvatarPressed" displayShape="Circle" showBorder="true" tooltip="Profile">
+                                        <Avatar src="dist/images/image002.jpg" displaySize="XL" press=".onAvatarPressed" displayShape="Circle" showBorder="true" tooltip="Profile" class="sapUiSmallMarginTop">
                                         <detailBox>
                                             <LightBox>
                                                 <LightBoxItem
                                                         imageSrc="dist/images/image002.jpg"
                                                         alt="Wouter Lemaire"
                                                         title="Wouter Lemaire"
-                                                        subtitle="SAP Solution Architect, Developer &amp; part of SAP Mentors">
+                                                        subtitle="SAP Solution Architect, Developer &amp; SAP Mentor">
                                                 </LightBoxItem>
                                             </LightBox>
                                         </detailBox>
-                                            <!-- <layoutData>
-                                                <OverflowToolbarLayoutData priority="NeverOverflow"/>
-                                            </layoutData> -->
                                         </Avatar>
+                                        <Title width="100%"
+                                                text="Wouter Lemaire"
+                                                level="H1"
+                                                titleStyle="H1"
+                                                class="sapUiSmallMarginTop"/>
+                                        <Text text="SAP Solution Architect &amp; Developer" class="sapUiTinyMarginTop"/>
+                                        <Text text="SAP Mentor | SAP Certified" class="sapUiTinyMarginTop sapUiSmallMarginBottom"/>
                                     </VBox>
-                                 <!-- </l:Grid> -->
                         </l:BlockLayoutCell>
                         <l:BlockLayoutCell
                                 backgroundColorSet="ColorSet10"
                                 backgroundColorShade="ShadeC">
-                                    <VBox alignItems="Center">
+                                    <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
                                     <l:VerticalLayout>
-                                        <HBox>
-                                            <core:Icon
-                                                    src="sap-icon://accept"
-                                                    size="1rem"
-                                                    color="Default"
-                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom"/>
-                                            <Text width="100%"
-                                                text="SAP Solution Architect, Developer &amp; Consultant"
-                                                class="sapUiSmallMarginBottom"/>
-                                        </HBox>
-                                        <HBox>
-                                            <core:Icon
-                                                    src="sap-icon://accept"
-                                                    size="1rem"
-                                                    color="Default"
-                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                            <Text width="100%"
-                                                text="Focus on BTP, Fiori/WorkZone, UI5, CAP &amp; ABAP"
-                                                class="sapUiSmallMarginTopBottom"/>
-                                        </HBox>
-                                        <HBox>
-                                            <core:Icon
-                                                    src="sap-icon://accept"
-                                                    size="1rem"
-                                                    color="Default"
-                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                            <Text width="100%"
-                                                text="Active SAP Community member &amp; SAP Mentor"
-                                                class="sapUiSmallMarginTopBottom"/>
-                                        </HBox>
-                                        <HBox>
-                                            <core:Icon
-                                                    src="sap-icon://accept"
-                                                    size="1rem"
-                                                    color="Default"
-                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTopBottom"/>
-                                            <Text width="100%"
-                                                text="SAP Certified"
-                                                class="sapUiSmallMarginTopBottom"/>
-                                        </HBox>
-                                        <HBox>
-                                            <Title width="100%"
-                                                level="H5"
-                                                titleStyle="H5"
-                                                class="sapUiTinyMarginBegin sapUiSmallMarginTopBottom">
-                                                <Link text="Read more about me..." press=".onNavigateTo('me')" />
-                                            </Title>
+                                        <Text
+                                            text="I help organizations get the most out of their SAP investments through architecture, development, and strategic guidance."
+                                            class="sapUiSmallMarginBottom"/>
+                                        <Text
+                                            text="With over 10 years of experience in the SAP ecosystem, I specialize in BTP, Fiori/WorkZone, UI5, CAP, and ABAP. I combine deep technical expertise with practical experience from working with enterprise customers across Europe."
+                                            class="sapUiSmallMarginBottom"/>
+                                        <HBox class="sapUiMediumMarginTop">
+                                            <Button text="Get in Touch" type="Emphasized" press=".onContact" icon="sap-icon://email" class="sapUiSmallMarginEnd"/>
+                                            <Button text="About Me" type="Default" press=".onNavigateTo('me')" icon="sap-icon://person-placeholder"/>
                                         </HBox>
                                     </l:VerticalLayout>
                                     </VBox>
@@ -127,168 +73,177 @@
                 <headerToolbar>
                     <Toolbar class="headlineCell">
                         <Title width="100%"
-                            text="How can I help you?"
+                            text="Areas of Expertise"
                             level="H3"
                             titleStyle="H3"
                             class="sapUiMediumMarginTopBottom"/>
                     </Toolbar>
                 </headerToolbar>
-                <!-- <l:Grid
-                    defaultSpan="XL8 L10 M12 S12"
-                    hSpacing="0"
-                    vSpacing="0">
-                    <VBox alignItems="Center">
-                        <layoutData>
-                            <l:GridData span="XL2 L1 M12 S12"/>
-                        </layoutData>
-                    </VBox> -->
+                <l:BlockLayout>
+                    <l:BlockLayoutRow>
+                        <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeC">
+                            <VBox alignItems="Center">
+                                <Avatar src="sap-icon://cloud" displaySize="XL" press=".onNavigateTo('btp')" displayShape="Circle" showBorder="true" tooltip="BTP Architecture">
+                                </Avatar>
+                                <Title width="100%"
+                                        text="BTP Architecture"
+                                        level="H4"
+                                        wrapping="true"
+                                        class="sapUiSmallMarginTop"/>
+                                <Text text="Governance, security, integration, and application development on SAP Business Technology Platform" textAlign="Center" class="sapUiTinyMarginTop"/>
+                                <Link text="Learn more" press=".onNavigateTo('btp')" class="sapUiSmallMarginTop"/>
+                            </VBox>
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell
+                                backgroundColorSet="ColorSet10"
+                                backgroundColorShade="ShadeD">
+                            <VBox alignItems="Center">
+                                <Avatar src="sap-icon://desktop-mobile" displaySize="XL" press=".onNavigateTo('fiori')" displayShape="Circle" showBorder="true" tooltip="Fiori &amp; WorkZone">
+                                </Avatar>
+                                <Title width="100%"
+                                        text="Fiori &amp; WorkZone"
+                                        level="H4"
+                                        titleStyle="H4"
+                                        wrapping="true"
+                                        class="sapUiSmallMarginTop"/>
+                                <Text text="Central Launchpad strategy, UX design, governance, and Fiori application development" textAlign="Center" class="sapUiTinyMarginTop"/>
+                                <Link text="Learn more" press=".onNavigateTo('fiori')" class="sapUiSmallMarginTop"/>
+                            </VBox>
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell
+                                backgroundColorSet="ColorSet10"
+                                backgroundColorShade="ShadeE">
+                            <VBox alignItems="Center">
+                                <Avatar src="sap-icon://connected" displaySize="XL" press=".onNavigateTo('mcp')" displayShape="Circle" showBorder="true" tooltip="SAP MCP Server">
+                                </Avatar>
+                                <Title width="100%"
+                                        text="SAP MCP Server"
+                                        level="H4"
+                                        titleStyle="H4"
+                                        wrapping="true"
+                                        class="sapUiSmallMarginTop"/>
+                                <Text text="Connect any SAP system with AI agents using the Model Context Protocol" textAlign="Center" class="sapUiTinyMarginTop"/>
+                                <Link text="Learn more" press=".onNavigateTo('mcp')" class="sapUiSmallMarginTop"/>
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:BlockLayoutRow>
+                </l:BlockLayout>
+            </Panel>
+            <Panel	accessibleRole="Region"
+                    backgroundDesign="Transparent"
+                    class="sapUiNoContentPadding">
+                <headerToolbar>
+                    <Toolbar class="headlineCell">
+                        <Title width="100%"
+                            text="How I Can Help"
+                            level="H3"
+                            titleStyle="H3"
+                            class="sapUiMediumMarginTopBottom"/>
+                    </Toolbar>
+                </headerToolbar>
                 <l:BlockLayout>
                     <l:BlockLayoutRow>
                         <l:BlockLayoutCell
                             backgroundColorSet="ColorSet10"
                             backgroundColorShade="ShadeB">
-                            <!-- <l:Grid
-                                defaultSpan="XL6 L8 M10 S12"
-                                hSpacing="0"
-                                vSpacing="0"> -->
-                                <!-- <VBox alignItems="Center">
-                                    <layoutData>
-                                        <l:GridData span="XL3 L2 M1 S12"/>
-                                    </layoutData>
-                                </VBox> -->
-                                <VBox alignItems="Center">
-                                        <Text
-                                                text="Over the years, I've had the privilege of working closely with SAP customers, sharing my knowledge and expertise to help them navigate the complexities of SAP technology. Through this experience, I've noticed that many customers encounter similar challenges, and I am eager to expand my reach to offer assistance."/>
-
-                                        <Text ></Text>
-                                        <Text
-                                                text='With this in mind, I am delighted to announce the launch of two new workshops focused on "BTP Governance and Architecture" and "Central Launchpad/WorkZone." These workshops are designed to provide in-depth insights, practical guidance, and hands-on experience to empower participants to tackle governance issues, architect solutions effectively, and leverage the full potential of SAP technology.'
-                                                class="sapUiSmallMarginBottom"/>
-                                </VBox>
-                            <!-- </l:Grid> -->
+                            <FlexBox
+                                alignItems="Start"
+                                justifyContent="Center"
+                                class="sapUiMediumMarginTopBottom">
+                                <l:Grid
+                                    defaultSpan="XL4 L6 M6 S12"
+                                    hSpacing="1"
+                                    vSpacing="0"
+                                    width="100%" >
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://physical-activity" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Architecture &amp; Strategy"/>
+                                                <Text text="Define your BTP landscape, Fiori strategy, and technical roadmap aligned with your business goals."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://syntax" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Development"/>
+                                                <Text text="Build applications using CAP, UI5, Fiori Elements, and ABAP RAP. From proof of concept to production."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://learning-assistant" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Mentoring &amp; Training"/>
+                                                <Text text="Upskill your team on BTP technologies. Knowledge transfer, code reviews, and best practices coaching."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://official-service" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Governance &amp; Best Practices"/>
+                                                <Text text="Establish governance frameworks, naming conventions, security standards, and development guidelines."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://combine" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Integration"/>
+                                                <Text text="Connect BTP with on-premise systems and cloud solutions. Cloud Connector setup, destination configuration, and API management."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" justifyContent="Start" alignItems="Stretch" class="sapUiSmallMarginTopBottom">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://developer-settings" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="DevOps &amp; CI/CD"/>
+                                                <Text text="Set up automated pipelines, testing strategies, and transport management for your BTP applications."/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                </l:Grid>
+                            </FlexBox>
                         </l:BlockLayoutCell>
                     </l:BlockLayoutRow>
+                </l:BlockLayout>
+            </Panel>
+            <Panel	accessibleRole="Region"
+                    backgroundDesign="Transparent"
+                    class="sapUiNoContentPadding">
+                <l:BlockLayout>
                     <l:BlockLayoutRow>
                         <l:BlockLayoutCell
                             backgroundColorSet="ColorSet10"
                             backgroundColorShade="ShadeC">
-                            <!-- <VBox alignItems="End"> -->
-                                <VBox alignItems="Center">
-                                <Avatar src="sap-icon://cloud" displaySize="XL" press=".onNavigateTo('btp')" displayShape="Circle" showBorder="true" tooltip="Profile">
-                                </Avatar>
-                                <!-- <Toolbar > -->
-                                <Title width="100%"
-                                        text="Business Technology Platform"
-                                        level="H5"
-                                        wrapping="true"
-                                        class="sapUiSmallMarginTop">
-                                    <Link text="Business Technology Platform (BTP) Governance &amp; Architecture" press=".onNavigateTo('btp')" wrapping="true" />
-                                </Title>
-                                <!-- </Toolbar> -->
-                                <!-- <Title width="100%"
-                                        text="Business Technology Platform"
-                                        level="H5"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginBottom">
-                                    <Link text="Governance &amp; Architecture" press=".onNavigateTo('btp')" />
-                                </Title> -->
+                            <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
+                                <Title text="Ready to discuss your project?" level="H3" class="sapUiSmallMarginBottom"/>
+                                <Text text="Whether you need architectural guidance, hands-on development, or team mentoring, I'm here to help." class="sapUiSmallMarginBottom" textAlign="Center"/>
+                                <Button text="Get in Touch" type="Emphasized" press=".onContact" icon="sap-icon://email" class="sapUiMediumMarginTop"/>
                             </VBox>
-                            <!-- </VBox> -->
-                        </l:BlockLayoutCell>
-                        <l:BlockLayoutCell
-                                backgroundColorSet="ColorSet10"
-                                backgroundColorShade="ShadeD">
-                            <!-- <VBox alignItems="Start"> -->
-                            <VBox alignItems="Center">
-                                <Avatar src="sap-icon://desktop-mobile" displaySize="XL" press=".onNavigateTo('fiori')" displayShape="Circle" showBorder="true" tooltip="Profile">
-                                </Avatar>
-                                <Title width="100%"
-                                        text="Fiori Launchpad &amp; WorkZone"
-                                        level="H5"
-                                        titleStyle="H5"
-                                        wrapping="true"
-                                        class="sapUiSmallMarginTop">
-                                    <Link text="Central Launchpad / WorkZone" press=".onNavigateTo('fiori')"  wrapping="true"/>
-                                </Title>
-                                <!-- <Title width="100%"
-                                        text="Fiori Launchpad &amp; WorkZone"
-                                        level="H5"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginBottom">
-                                    <Link text="Launchpad/WorkZone" press=".onNavigateTo('fiori')" />
-                                </Title> -->
-                            </VBox>
-                            <!-- </VBox> -->
                         </l:BlockLayoutCell>
                     </l:BlockLayoutRow>
-                    <!-- <l:BlockLayoutRow>
-                        <l:BlockLayoutCell
-                                backgroundColorSet="ColorSet10"
-                                backgroundColorShade="ShadeD">
-                            <VBox alignItems="Center">
-                                <Avatar src="sap-icon://syntax" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
-                                </Avatar>
-                                <Title width="100%"
-                                        level="H5"
-                                        text="Cloud Application Programming"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginTop">
-                                </Title>
-                                <Title width="100%"
-                                        level="H5"
-                                        text="model"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginBottom">
-                                </Title>
-                            </VBox>
-                        </l:BlockLayoutCell>
-                        <l:BlockLayoutCell
-                                backgroundColorSet="ColorSet10"
-                                backgroundColorShade="ShadeB">
-                            <VBox alignItems="Center">
-                                <Avatar src="sap-icon://sap-ui5" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
-                                </Avatar>
-                                <Title width="100%"
-                                        level="H5"
-                                        text="SAPUI5"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginTop">
-                                        </Title>
-                                <Title width="100%"
-                                        level="H5"
-                                        text="Fiori Elements"
-                                        titleStyle="H5"
-                                        class="sapUiSmallMarginBottom">
-                                        </Title>
-                            </VBox>
-                        </l:BlockLayoutCell>
-                        <l:BlockLayoutCell
-                                backgroundColorSet="ColorSet10"
-                                backgroundColorShade="ShadeC">
-                                <VBox alignItems="Center">
-                                    <Avatar src="sap-icon://syntax" displaySize="XL" displayShape="Circle" showBorder="true" tooltip="Profile">
-                                    </Avatar>
-                                    <Title width="100%"
-                                            level="H5"
-                                            text="ABAP"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginTop">
-                                    </Title>
-                                    <Title width="100%"
-                                            level="H5"
-                                            text="RESTful Application Programming"
-                                            titleStyle="H5"
-                                            class="">
-                                    </Title>
-                                    <Title width="100%"
-                                            level="H5"
-                                            text="Model"
-                                            titleStyle="H5"
-                                            class="sapUiSmallMarginBottom">
-                                    </Title>
-                                </VBox>
-                        </l:BlockLayoutCell>
-                    </l:BlockLayoutRow> -->
                     <l:BlockLayoutRow>
                         <l:BlockLayoutCell
                             backgroundColorSet="ColorSet10"

@@ -26,6 +26,9 @@ sap.ui.define(["./Base.controller"], function (__Controller) {
         page_title: "fiori",
         page_location: location.href // Full URL is required.
       });
+    },
+    onContact: function _onContact() {
+      window.open("mailto:wouter@lem-tech.be?subject=Fiori Inquiry", "_blank");
     }
   });
   return Fiori;

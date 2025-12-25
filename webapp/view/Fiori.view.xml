@@ -22,7 +22,7 @@
                                 width="100%"
                                 class="welcomeImageTextLayout">
                                 <Text class="welcomeImageTextHeadline"
-                                    text="Your guide to a Central Launchpad"
+                                    text="Fiori &amp; WorkZone Expertise"
                                     width="100%"
                                     textAlign="Center"/>
 						    </l:VerticalLayout>
@@ -46,7 +46,7 @@
                 <headerToolbar>
                     <Toolbar class="headlineCell">
                         <Title width="100%"
-                            text="Providing Assitance &amp; Guidance"
+                            text="What I Can Help You With"
                             level="H3"
                             titleStyle="H3"
                             class="sapUiMediumMarginTopBottom"/>
@@ -780,6 +780,21 @@
                 </FlexBox>
             </Panel>      
       
+            <Panel accessibleRole="Region" backgroundDesign="Translucent" class="sapUiNoContentPadding">
+                <l:BlockLayout>
+                    <l:BlockLayoutRow>
+                        <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeC">
+                            <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
+                                <Title text="Need help with Fiori or WorkZone?" level="H3" class="sapUiSmallMarginBottom"/>
+                                <Text text="Whether you're setting up a central launchpad or optimizing your Fiori applications, I can help." class="sapUiSmallMarginBottom" textAlign="Center"/>
+                                <Button text="Get in Touch" type="Emphasized" press=".onContact" icon="sap-icon://email" class="sapUiMediumMarginTop"/>
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:BlockLayoutRow>
+                </l:BlockLayout>
+            </Panel>
             <Panel class="sapUiNoContentPadding">
                 <l:BlockLayout>
                     <l:BlockLayoutRow>
@@ -795,7 +810,6 @@
         </l:VerticalLayout>
                 </l:Grid>
              </l:VerticalLayout>
-            <!-- </Panel> -->
         </f:content>
     </f:DynamicPage>
 </mvc:View>
