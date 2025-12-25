@@ -87,7 +87,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://connected" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://connected" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent6"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="Universal SAP Connectivity"></Title>
@@ -122,7 +122,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://machine" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://machine" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent7"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="AI Agent Ready"></Title>
@@ -157,7 +157,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://database" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://database" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent8"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="OData Integration"></Title>
@@ -192,7 +192,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://cloud" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://cloud" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent9"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="BTP Deployment"></Title>
@@ -227,7 +227,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://shield" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://shield" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent10"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="Enterprise Security"></Title>
@@ -262,7 +262,7 @@
                                     <HBox width="100%" justifyContent="Center">
                                         <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
                                             <VBox justifyContent="Start" alignItems="Center">
-                                                <Avatar src="sap-icon://add-product" displaySize="M" displayShape="Circle" showBorder="false"/>
+                                                <Avatar src="sap-icon://add-product" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent1"/>
                                             </VBox>
                                             <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                                 <Title text="Advanced Version"></Title>

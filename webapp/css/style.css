@@ -1,86 +1,432 @@
+/* ========================================
+   Modern Portfolio Styles
+   ======================================== */
+
+/* Base transitions for smooth interactions */
+* {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Header styling */
 .headlineCell {
-	text-align: center !important;
-	padding-top: 2rem !important;
-	padding-bottom: 2rem !important;
+    text-align: center !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
     border-bottom: none !important;
     border-top: none !important;
 }
+
+.headlineCell .sapMTitle {
+    background: linear-gradient(135deg, #0a6ed1 0%, #1a9cf9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .makeWhite {
-	color: #fff;
+    color: #fff;
 }
-.scrollCorrection .sapTntToolPageContentWrapper{
-	margin-bottom: .5625rem !important;
+
+.scrollCorrection .sapTntToolPageContentWrapper {
+    margin-bottom: .5625rem !important;
 }
+
+/* ========================================
+   Hero Section Styles
+   ======================================== */
 .welcomeImageTextHeadline {
-	font-size: 3rem;
-	color: #fff;
-	text-shadow: 0 0 0.125rem #000;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
+
 .sapUiDemokitLandingImageCell {
-	line-height: 0;
+    line-height: 0;
 }
+
 .welcomeImageCell {
-	position:relative;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Gradient overlay on hero images */
+.welcomeImageCell::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    pointer-events: none;
+}
+
 .welcomeImageTextLayout {
-	position:absolute;
-	top: 70%;
-	left:0;
-	margin-top: -7rem;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    margin-top: -7rem;
+    z-index: 1;
 }
 
 .welcomeImageTextLayout .sapUiVltCell {
-	text-align: center;
-}
-.welcomeImage {
-    height: 100%;
+    text-align: center;
 }
 
-/* Special case with initial page having different aspect ratio according to screen size */
+.welcomeImage {
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.welcomeImageCell:hover .welcomeImage {
+    transform: scale(1.02);
+}
+
+/* Hero image aspect ratio */
 .welcomeImageCell:before {
     content: '';
     display: block;
     float: left;
 }
 
-.welcomeImageCell:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
 @media (max-width: 64rem) {
-	.welcomeImageCell:before {
-		/* Aspect ratio on a smaller display differs */
+    .welcomeImageCell:before {
         padding-top: 34%;
-	}
+    }
+    .welcomeImageTextHeadline {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 64rem) and (orientation: portrait) {
     .welcomeImageCell:before {
-		/* Aspect ratio on a landscape mode differs */
         padding-top: 40%;
-	}
+    }
 }
 
 @media (min-width: 64rem) {
     .welcomeImageCell:before {
-		/* Keeping aspect ratio according to the image set */
         padding-top: 19.5%;
-	}
+    }
 }
 
-/* FireFox does not handle aspect ratio optimization so this must be disabled for it only by resetting the element position */
 html[data-sap-ui-browser^="ff"] .welcomeImage {
-	position: relative;
+    position: relative;
 }
-/* .sapUiMedia-Std-Tablet .sapUiDemokit .sapUiHomePage .headlineCell,
-.sapUiMedia-Std-Phone .sapUiDemokit .sapUiHomePage .headlineCell {
-	padding-top: 1.625rem;
-	padding-bottom: 1.625rem;
-} */
 
-/* .sapUiMedia-Std-Tablet .sapUiDemokit .sapUiHomePage .headlineCell .sapMTitleStyleH1,
-.sapUiMedia-Std-Phone .sapUiDemokit .sapUiHomePage .headlineCell .sapMTitleStyleH1 {
-	font-size: 1.25rem;
-} */
+/* ========================================
+   Avatar Enhancements
+   ======================================== */
+.sapFAvatar {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sapFAvatar:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sapFAvatarCircle {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+/* ========================================
+   Card and Block Styling
+   ======================================== */
+.sapUiBlockLayoutCell {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Expertise cards hover effect */
+.sapMHBox[class*="justifyContent"] > .sapMHBox {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.sapMHBox[class*="justifyContent"] > .sapMHBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Service cards with subtle glow */
+.sapUiBlockLayoutCellColorShadeC,
+.sapUiBlockLayoutCellColorShadeD,
+.sapUiBlockLayoutCellColorShadeE {
+    position: relative;
+}
+
+/* ========================================
+   Button Enhancements
+   ======================================== */
+.sapMBtn {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.sapMBtnEmphasized {
+    box-shadow: 0 4px 14px rgba(10, 110, 209, 0.4) !important;
+}
+
+.sapMBtnEmphasized:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 110, 209, 0.5) !important;
+}
+
+.sapMBtnDefault:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Link Styling
+   ======================================== */
+.sapMLink {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.sapMLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0a6ed1, #1a9cf9);
+    transition: width 0.3s ease;
+}
+
+.sapMLink:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   Title Styling
+   ======================================== */
+.sapMTitle.sapMTitleStyleH1,
+.sapMTitle.sapMTitleStyleH2 {
+    letter-spacing: -0.5px;
+}
+
+.sapMTitle.sapMTitleStyleH3 {
+    letter-spacing: -0.3px;
+}
+
+/* ========================================
+   Panel and Section Styling
+   ======================================== */
+.sapMPanel {
+    border-radius: 0;
+}
+
+/* Add subtle separator between sections */
+.sapMPanel:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ========================================
+   Icon Styling
+   ======================================== */
+.sapUiIcon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sapMHBox:hover .sapUiIcon[src="sap-icon://accept"] {
+    transform: scale(1.1);
+    color: #0a6ed1 !important;
+}
+
+/* ========================================
+   List Styling
+   ======================================== */
+.sapMList .sapMLIB {
+    border-radius: 8px;
+    margin-bottom: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sapMList .sapMLIB:hover {
+    transform: translateX(4px);
+}
+
+.sapMList .sapMSLI:hover .sapMSLITitleOnly,
+.sapMList .sapMSLI:hover .sapMSLITitle {
+    color: #0a6ed1;
+}
+
+/* ========================================
+   Block Layout Color Enhancements
+   ======================================== */
+/* Add subtle gradients to block cells */
+.sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeB {
+    background: linear-gradient(135deg, #e8f4fd 0%, #d4ebfc 100%) !important;
+}
+
+.sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeC {
+    background: linear-gradient(135deg, #d4ebfc 0%, #bfe0fa 100%) !important;
+}
+
+.sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeD {
+    background: linear-gradient(135deg, #bfe0fa 0%, #a9d5f8 100%) !important;
+}
+
+.sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeE {
+    background: linear-gradient(135deg, #a9d5f8 0%, #94caf6 100%) !important;
+}
+
+/* Dark theme support */
+html[data-sap-ui-theme="sap_horizon_dark"] .sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeB {
+    background: linear-gradient(135deg, #1a3a4f 0%, #1e4562 100%) !important;
+}
+
+html[data-sap-ui-theme="sap_horizon_dark"] .sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeC {
+    background: linear-gradient(135deg, #1e4562 0%, #225075 100%) !important;
+}
+
+html[data-sap-ui-theme="sap_horizon_dark"] .sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeD {
+    background: linear-gradient(135deg, #225075 0%, #265b88 100%) !important;
+}
+
+html[data-sap-ui-theme="sap_horizon_dark"] .sapUiBlockLayoutCellColorSetColorSet10.sapUiBlockLayoutCellColorShadeE {
+    background: linear-gradient(135deg, #265b88 0%, #2a669b 100%) !important;
+}
+
+html[data-sap-ui-theme="sap_horizon_dark"] .headlineCell .sapMTitle {
+    background: linear-gradient(135deg, #4db6ff 0%, #7ec8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========================================
+   Tool Header Enhancements
+   ======================================== */
+.sapTntToolHeader {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sapMITH {
+    background: transparent;
+}
+
+.sapMITBFilter {
+    transition: all 0.3s ease;
+}
+
+.sapMITBFilter:hover {
+    background-color: rgba(10, 110, 209, 0.08);
+    border-radius: 8px;
+}
+
+/* ========================================
+   Image Hover Effects
+   ======================================== */
+.sapMImg {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sapMImg:hover {
+    transform: scale(1.05);
+}
+
+/* Social media icons */
+.sapMHBox .sapMImg[src*="github"],
+.sapMHBox .sapMImg[src*="linkedin"],
+.sapMHBox .sapMImg[src*="xlogo"],
+.sapMHBox .sapMImg[src*="sap"] {
+    filter: grayscale(20%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sapMHBox .sapMImg[src*="github"]:hover,
+.sapMHBox .sapMImg[src*="linkedin"]:hover,
+.sapMHBox .sapMImg[src*="xlogo"]:hover,
+.sapMHBox .sapMImg[src*="sap"]:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1) translateY(-2px);
+}
+
+/* ========================================
+   Text Enhancements
+   ======================================== */
+.sapMText {
+    line-height: 1.6;
+}
+
+/* ========================================
+   Scroll Animations (subtle)
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sapUiBlockLayoutCell {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ========================================
+   Focus States for Accessibility
+   ======================================== */
+.sapMBtn:focus,
+.sapMLink:focus,
+.sapFAvatar:focus {
+    outline: 2px solid #0a6ed1;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   Custom Scrollbar
+   ======================================== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0a6ed1, #1a9cf9);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0854a0, #0a6ed1);
+}
+
+html[data-sap-ui-theme="sap_horizon_dark"] ::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+@media (max-width: 600px) {
+    .sapMBtnEmphasized,
+    .sapMBtnDefault {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .welcomeImageTextHeadline {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+}
