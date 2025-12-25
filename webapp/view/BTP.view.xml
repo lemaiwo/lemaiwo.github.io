@@ -72,8 +72,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="Getting Started"></Title>
-                                                        <Text text="Help you starting with BTP in no time by:"></Text>
+                                                        <Title text="Platform Setup"></Title>
+                                                        <Text text="Get your BTP foundation right from the start:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -81,7 +81,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Introducing you to BTP"
+                                                                text="Strategic BTP adoption planning"
                                                                 class=""/>
                                                         </HBox><HBox>
                                                             <core:Icon
@@ -90,7 +90,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Defining your BTP Landscape"
+                                                                text="Landscape architecture design"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -100,7 +100,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Setting up your BTP Landscape"
+                                                                text="Environment configuration"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
@@ -113,8 +113,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="Mentoring"></Title>
-                                                        <Text text="I'll be your personal BTP mentor by:"></Text>
+                                                        <Title text="Team Enablement"></Title>
+                                                        <Text text="Build internal BTP capabilities:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -122,7 +122,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Sharing my knowledge"
+                                                                text="Hands-on developer training"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -132,7 +132,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Sharing my experience"
+                                                                text="Best practices guidance"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -142,7 +142,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Training your BTP team"
+                                                                text="Technical coaching and mentoring"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
@@ -155,8 +155,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="Organizing BTP"></Title>
-                                                        <Text text="I can guide you to setup your BTP landscape to your needs using:"></Text>
+                                                        <Title text="Account Structure"></Title>
+                                                        <Text text="Organize BTP for scale and maintainability:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -164,7 +164,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Directories"
+                                                                text="Directory and subaccount design"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -174,7 +174,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Subaccounts"
+                                                                text="Environment separation strategy"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -184,12 +184,12 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Spaces"
+                                                                text="Service and entitlement management"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
                                                 </HBox>
-                                                
+
                                             </HBox>
                                             <HBox width="100%" justifyContent="Center">
                                         <!-- </l:Grid> -->
@@ -205,8 +205,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="BTP Governance"></Title>
-                                                        <Text text="Based on hands-on experience I can assist you with your BTP Governance:"></Text>
+                                                        <Title text="Governance Framework"></Title>
+                                                        <Text text="Establish clear standards and processes:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -214,7 +214,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Best Practices"
+                                                                text="Development standards and guidelines"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -224,7 +224,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Recommendations"
+                                                                text="Naming conventions"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -234,7 +234,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Naming Conventions"
+                                                                text="Role and responsibility definitions"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -244,12 +244,12 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Responsibilities"
+                                                                text="Review and approval processes"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
                                                 </HBox>
-                                            
+
                                             </HBox>
                                             <HBox width="100%" justifyContent="Center">
                                                 <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
@@ -258,8 +258,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="BTP Security"></Title>
-                                                        <Text text="Going to Cloud makes companies more vulnerable. I'll make sure you do this in the most secure way possible by focussing on:"></Text>
+                                                        <Title text="Security Architecture"></Title>
+                                                        <Text text="Secure cloud adoption with confidence:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -267,7 +267,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Authentication"
+                                                                text="Identity and authentication setup"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -277,7 +277,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Authorizations"
+                                                                text="Authorization concepts and roles"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
@@ -290,8 +290,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="BTP Integration"></Title>
-                                                        <Text text="BTP is designed to integrate with Cloud and On-Premise to close the gap! I can help you to connect it with:"></Text>
+                                                        <Title text="System Integration"></Title>
+                                                        <Text text="Connect cloud and on-premise seamlessly:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -299,7 +299,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="On-Premise systems using the Cloud Connector"
+                                                                text="Cloud Connector configuration"
                                                                 class=""/>
                                                         </HBox>
                                                         <HBox>
@@ -309,7 +309,7 @@
                                                                     color="Default"
                                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                             <Text width="100%"
-                                                                text="Any SAP Cloud Solution you need in BTP"
+                                                                text="SAP Cloud solution connectivity"
                                                                 class=""/>
                                                         </HBox>
                                                     </VBox>
@@ -339,12 +339,12 @@
                                         backgroundColorShade="ShadeB">
                                         <VBox alignItems="Center">
                                                 <Title width="100%"
-                                                    text="Applications &amp; Extensions"
+                                                    text="Application Development"
                                                     level="H3"
                                                     titleStyle="H3"
                                                     class="sapUiMediumMarginBottom"/>
                                                 <Text
-                                                        text="BTP is designed for extending SAP Cloud solutions and SAP On-Premise systems by building applications to keep your core clean! As a developer, I can build applications in BTP but I can also help you and your team building applications in BTP to make extensions on any of your SAP Cloud solutions or On-Premise systems for adapting it to your needs using: "
+                                                        text="Extend SAP Cloud and on-premise systems with custom applications while keeping your core clean. Full-stack development services using modern SAP development frameworks:"
                                                         class="sapUiSmallMarginBottom"/>
                                         </VBox>
                                     </l:BlockLayoutCell>
@@ -447,8 +447,8 @@
                                                                     </Avatar>
                                                                 </VBox>
                                                                 <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                                    <Title text="Technologies"></Title>
-                                                                    <Text text="BTP offers new type of applications which requires to update the skills of your developer. I can build applications for you but I can also teach and mentor your developers to use the following technologies in BTP:"></Text>
+                                                                    <Title text="Development Stack"></Title>
+                                                                    <Text text="Modern frameworks for robust enterprise applications:"></Text>
                                                                     <HBox>
                                                                         <core:Icon
                                                                                 src="sap-icon://syntax"
@@ -509,8 +509,8 @@
                                                                     </Avatar>
                                                                 </VBox>
                                                                 <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                                    <Title text="Code Quality"></Title>
-                                                                    <Text text="It is not because the app looks good that the code looks good. Avoid bugs, keep maintenance low and have happy end users by applying the following:"></Text>
+                                                                    <Title text="Quality Assurance"></Title>
+                                                                    <Text text="Maintainable code that reduces bugs and technical debt:"></Text>
                                                                     <HBox>
                                                                         <core:Icon
                                                                                 src="sap-icon://accept"
@@ -571,8 +571,8 @@
                                                                     </Avatar>
                                                                 </VBox>
                                                                 <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                                    <Title text="DevOps"></Title>
-                                                                    <Text text="Avoid suprises when going to production with a good DevOps setup in BTP using:"></Text>
+                                                                    <Title text="CI/CD Pipeline"></Title>
+                                                                    <Text text="Reliable deployments from development to production:"></Text>
                                                                     <HBox>
                                                                         <core:Icon
                                                                                 src="sap-icon://accept"
@@ -643,12 +643,12 @@
                                         backgroundColorShade="ShadeC">
                                         <VBox alignItems="Center">
                                                 <Title width="100%"
-                                                    text="BTP Runtime Strategy"
+                                                    text="Runtime Strategy"
                                                     level="H3"
                                                     titleStyle="H3"
                                                     class="sapUiMediumMarginBottom"/>
                                                 <Text
-                                                        text="Building applications in BTP provides different runtime possibilities which requires a clear strategy based on your developers! I can provide guidance to choose the best options for your needs: "
+                                                        text="Choose the right runtime environment for your applications based on team skills and requirements:"
                                                         class="sapUiSmallMarginBottom"/>
                                         </VBox>
                                     </l:BlockLayoutCell>
@@ -688,7 +688,7 @@
                             <headerToolbar>
                                 <Toolbar class="headlineCell">
                                     <Title width="100%"
-                                        text="Providing Tools &amp; Templates"
+                                        text="Tools &amp; Accelerators"
                                         level="H3"
                                         titleStyle="H3"
                                         class="sapUiMediumMarginTopBottom"/>
@@ -710,7 +710,7 @@
                                                     </Avatar>
                                                 </VBox>
                                                 <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                    <Title text="Tooling for"></Title>
+                                                    <Title text="Migration Support"></Title>
                                                     <!-- <Text text="I can guide you to setup your BTP landscape to you needs using:"></Text> -->
                                                     <HBox>
                                                         <core:Icon
@@ -731,7 +731,7 @@
                                                                 color="Default"
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Text width="100%"
-                                                            text="Migrate apps from NEO to CF"
+                                                            text="NEO to Cloud Foundry migration"
                                                             class=""/>
                                                     </HBox>
                                                     <HBox>
@@ -741,7 +741,7 @@
                                                                 color="Default"
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Text width="100%"
-                                                            text="Migrate apps from On-Premise to CF"
+                                                            text="On-premise to cloud migration"
                                                             class=""/>
                                                     </HBox>
                                                     <HBox>
@@ -751,7 +751,7 @@
                                                                 color="Default"
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Text width="100%"
-                                                            text="Update apps config/tooling to the latest version"
+                                                            text="Modernization of legacy applications"
                                                             class=""/>
                                                     </HBox>
                                                 </VBox>
@@ -762,7 +762,7 @@
                                                     </Avatar>
                                                 </VBox>
                                                 <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                    <Title text="Templates for:"></Title>
+                                                    <Title text="Project Templates"></Title>
                                                     <!-- <Text text="Based on hands-on experience I can provide recommendation for the following topics to set up your BTP Governance:"></Text> -->
                                                     <HBox>
                                                         <core:Icon
@@ -771,7 +771,7 @@
                                                                 color="Default"
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Text width="100%"
-                                                            text="BTP Applications"
+                                                            text="BTP application starters"
                                                             class=""/>
                                                     </HBox>
                                                     <HBox>
@@ -781,7 +781,7 @@
                                                                 color="Default"
                                                                 class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                                         <Text width="100%"
-                                                            text="Generating BTP Landscape using Terraform"
+                                                            text="Infrastructure as Code with Terraform"
                                                             class=""/>
                                                     </HBox>
                                                 </VBox>
