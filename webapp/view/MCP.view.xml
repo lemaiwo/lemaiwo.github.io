@@ -1,0 +1,396 @@
+<mvc:View controllerName="be.wl.lemtech.wouter.controller.MCP"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	height="100%" >
+
+    <f:DynamicPage id="mcppage" class="sapUiNoContentPadding" >
+        <f:content>
+            <l:VerticalLayout width="100%">
+                <Panel accessibleRole="Region" class="sapUiNoContentPadding" backgroundDesign="Transparent">
+                    <l:BlockLayout>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell
+                                backgroundColorSet="ColorSet10"
+                                backgroundColorShade="ShadeB">
+                                <VBox alignItems="Center" class="sapUiLargeMarginTopBottom">
+                                    <Avatar src="sap-icon://connected" displaySize="XL" displayShape="Circle" showBorder="true" backgroundColor="Accent6"/>
+                                    <Title text="SAP MCP Server" level="H1" titleStyle="H1" class="sapUiMediumMarginTop"/>
+                                    <Text text="Connect any SAP system with AI agents" class="sapUiSmallMarginTop" textAlign="Center"/>
+                                </VBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                    </l:BlockLayout>
+                </Panel>
+                <l:Grid
+                    defaultSpan="XL8 L10 M12 S12"
+                    hSpacing="0"
+                    vSpacing="0">
+                    <VBox alignItems="Center">
+                        <layoutData>
+                            <l:GridData span="XL2 L1 M12 S12"/>
+                        </layoutData>
+                    </VBox>
+                    <l:VerticalLayout width="100%">
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="What is SAP MCP Server?"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeC">
+                                        <VBox alignItems="Center">
+                                            <Text
+                                                text="The SAP MCP Server is a powerful solution that bridges the gap between SAP systems and modern AI agents. Using the Model Context Protocol (MCP), it enables any AI assistant or agent to interact directly with SAP data through OData services."
+                                                class="sapUiSmallMarginBottom"/>
+                                            <Text
+                                                text="Whether you're running SAP ECC, S/4HANA on-premise, or any other SAP system, the MCP Server allows AI tools like Claude, Cursor, and other MCP-compatible agents to query, analyze, and work with your SAP data seamlessly."
+                                                class="sapUiSmallMarginBottom"/>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Key Features"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <FlexBox
+                                alignItems="Start"
+                                justifyContent="Center"
+                                class="sapUiMediumMarginTop">
+                                <l:Grid
+                                    defaultSpan="XL4 L6 M6 S12"
+                                    hSpacing="1"
+                                    vSpacing="0"
+                                    width="100%" >
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://connected" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent6"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Universal SAP Connectivity"></Title>
+                                                <Text text="Connect to any SAP system:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="SAP ECC"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="S/4HANA On-Premise"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="S/4HANA Cloud"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://machine" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent7"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="AI Agent Ready"></Title>
+                                                <Text text="Works with MCP-compatible AI tools:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Claude Desktop"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Cursor IDE"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Any MCP Client"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://database" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent8"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="OData Integration"></Title>
+                                                <Text text="Leverage existing SAP services:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="OData V2 &amp; V4"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Gateway Services"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="CAP Services"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://cloud" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent9"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="BTP Deployment"></Title>
+                                                <Text text="Run on SAP BTP:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Cloud Foundry"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Destination Service"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Secure Connectivity"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://shield" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent10"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Enterprise Security"></Title>
+                                                <Text text="Secure by design:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="SAP Authentication"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Role-based Access"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Data Privacy"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                    <HBox width="100%" justifyContent="Center">
+                                        <HBox width="20rem" height="175px" justifyContent="Start" alignItems="Stretch" class="">
+                                            <VBox justifyContent="Start" alignItems="Center">
+                                                <Avatar src="sap-icon://add-product" displaySize="M" displayShape="Circle" showBorder="false" backgroundColor="Accent1"/>
+                                            </VBox>
+                                            <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
+                                                <Title text="Advanced Version"></Title>
+                                                <Text text="Additional capabilities available:"></Text>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Extended Features"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Enterprise Support"/>
+                                                </HBox>
+                                                <HBox>
+                                                    <core:Icon
+                                                            src="sap-icon://accept"
+                                                            size="1rem"
+                                                            color="Default"
+                                                            class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
+                                                    <Text width="100%" text="Contact for Details"/>
+                                                </HBox>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                </l:Grid>
+                            </FlexBox>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Use Cases"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeD">
+                                        <VBox>
+                                            <HBox class="sapUiSmallMarginBottom">
+                                                <core:Icon src="sap-icon://customer-and-supplier" size="1.5rem" class="sapUiSmallMarginEnd"/>
+                                                <VBox>
+                                                    <Title text="Natural Language Queries" level="H5"/>
+                                                    <Text text="Ask questions about your SAP data in plain language. 'Show me all open purchase orders from last month' or 'What's our current inventory level for product X?'"/>
+                                                </VBox>
+                                            </HBox>
+                                            <HBox class="sapUiSmallMarginBottom">
+                                                <core:Icon src="sap-icon://business-objects-experience" size="1.5rem" class="sapUiSmallMarginEnd"/>
+                                                <VBox>
+                                                    <Title text="Data Analysis" level="H5"/>
+                                                    <Text text="Let AI agents analyze trends, identify anomalies, and generate insights from your SAP business data without complex report development."/>
+                                                </VBox>
+                                            </HBox>
+                                            <HBox class="sapUiSmallMarginBottom">
+                                                <core:Icon src="sap-icon://workflow-tasks" size="1.5rem" class="sapUiSmallMarginEnd"/>
+                                                <VBox>
+                                                    <Title text="Process Automation" level="H5"/>
+                                                    <Text text="Enable AI-assisted workflows that can read and interact with SAP data as part of automated business processes."/>
+                                                </VBox>
+                                            </HBox>
+                                            <HBox class="sapUiSmallMarginBottom">
+                                                <core:Icon src="sap-icon://developer-settings" size="1.5rem" class="sapUiSmallMarginEnd"/>
+                                                <VBox>
+                                                    <Title text="Developer Productivity" level="H5"/>
+                                                    <Text text="Use AI coding assistants like Cursor with direct access to your SAP data models and services for faster development."/>
+                                                </VBox>
+                                            </HBox>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                        <Panel	accessibleRole="Region"
+                                backgroundDesign="Translucent"
+                                class="sapUiNoContentPadding">
+                            <headerToolbar>
+                                <Toolbar class="headlineCell">
+                                    <Title width="100%"
+                                        text="Get Started"
+                                        level="H3"
+                                        titleStyle="H3"
+                                        class="sapUiMediumMarginTopBottom"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeB">
+                                        <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
+                                            <Text text="The basic version is available as open source on GitHub. For the advanced version with additional enterprise features, get in touch." class="sapUiSmallMarginBottom" textAlign="Center"/>
+                                            <HBox justifyContent="Center" class="sapUiMediumMarginTop">
+                                                <Button text="View on GitHub" icon="sap-icon://developer-settings" type="Emphasized" press=".onOpenGitHub" class="sapUiSmallMarginEnd"/>
+                                                <Button text="Contact Me" icon="sap-icon://email" type="Default" press=".onContact"/>
+                                            </HBox>
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                        <Panel class="sapUiNoContentPadding">
+                            <l:BlockLayout>
+                                <l:BlockLayoutRow>
+                                    <l:BlockLayoutCell
+                                        backgroundColorSet="ColorSet10"
+                                        backgroundColorShade="ShadeE">
+                                        <VBox alignItems="Center">
+                                        </VBox>
+                                    </l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                            </l:BlockLayout>
+                        </Panel>
+                    </l:VerticalLayout>
+                </l:Grid>
+            </l:VerticalLayout>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

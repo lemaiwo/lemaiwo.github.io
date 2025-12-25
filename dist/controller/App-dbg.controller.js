@@ -54,7 +54,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "./Base.controller", "sap/ui/model/jso
     },
     navigateToSection: function _navigateToSection(event) {
       var key = event.getParameter("key");
-      if (key === "help") {
+      if (key === "expertise") {
         var _event$getParameter;
         event === null || event === void 0 || (_event$getParameter = event.getParameter("item")) === null || _event$getParameter === void 0 || _event$getParameter._expandButtonPress();
       } else {

@@ -345,6 +345,28 @@
                                 </List>
                     </l:BlockLayoutCell>
                 </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeD">
+                        <VBox alignItems="Center" class="sapUiMediumMarginTopBottom">
+                            <Title text="Let's Work Together" level="H3" class="sapUiSmallMarginBottom"/>
+                            <Text text="Have a project in mind or need help with SAP technologies? I'd love to hear from you." class="sapUiSmallMarginBottom" textAlign="Center"/>
+                            <HBox justifyContent="Center" class="sapUiMediumMarginTop">
+                                <Button text="Email Me" type="Emphasized" press=".onContact" icon="sap-icon://email" class="sapUiSmallMarginEnd"/>
+                                <Button text="LinkedIn" type="Default" press=".onOpenFollowMeOn('https://www.linkedin.com/in/wouterlemaire')" icon="sap-icon://visits"/>
+                            </HBox>
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell
+                            backgroundColorSet="ColorSet10"
+                            backgroundColorShade="ShadeE">
+                        <VBox alignItems="Center">
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
             </l:BlockLayout>
             </l:Grid>
         </f:content>

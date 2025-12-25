@@ -28,7 +28,7 @@ export default class App extends Controller {
 	}
     public navigateToSection(event: IconTabHeader$SelectEvent) {
         const key = event.getParameter("key");
-        if (key === "help") {
+        if (key === "expertise") {
             event?.getParameter("item")?._expandButtonPress()
         } else {
             this.getRouter().navTo(key!);
