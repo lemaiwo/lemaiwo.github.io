@@ -64,8 +64,8 @@
 								<IconTabFilter
 									id="mcp"
 									key="mcp"
-									icon="sap-icon://connected"
-									text="SAP MCP Server">
+									icon="sap-icon://ai"
+									text="SAP &amp; AI">
 								</IconTabFilter>
 							</items>
 						</IconTabFilter>
