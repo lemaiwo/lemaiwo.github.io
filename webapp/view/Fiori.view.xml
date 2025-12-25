@@ -70,8 +70,8 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Getting Started"></Title>
-                                        <Text text="Helping you building a central launchpad for your end users by:"></Text>
+                                        <Title text="Launchpad Strategy"></Title>
+                                        <Text text="Build a unified entry point for your users:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -79,7 +79,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Introducing you to FLP &amp; WorkZone"
+                                                text="FLP and WorkZone evaluation"
                                                 class=""/>
                                         </HBox><HBox>
                                             <core:Icon
@@ -88,7 +88,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Guiding you through both"
+                                                text="Platform selection guidance"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -98,7 +98,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Defining your Central Launchpad landscape"
+                                                text="Central launchpad architecture"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -111,8 +111,8 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Mentoring"></Title>
-                                        <Text text="I will not only do it for you, I'll be your personal Central Launchpad mentor by:"></Text>
+                                        <Title text="Team Enablement"></Title>
+                                        <Text text="Build internal Fiori and WorkZone expertise:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -120,7 +120,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Sharing my knowledge"
+                                                text="Hands-on training sessions"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -130,7 +130,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Sharing my experience"
+                                                text="Best practices guidance"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -140,7 +140,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Training your own Central Launchpad team"
+                                                text="Technical coaching and mentoring"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -154,7 +154,7 @@
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
                                         <Title text="UX Strategy"></Title>
-                                        <Text text="A Central Launchpad requires a clear UX strategy that comes with:"></Text>
+                                        <Text text="Create a consistent user experience across applications:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -162,7 +162,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Design Guidelines"
+                                                text="Design guidelines and standards"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -172,7 +172,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Fiori First Strategy"
+                                                text="Fiori-first adoption strategy"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -182,7 +182,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Spaces &amp; Pages design"
+                                                text="Spaces and pages architecture"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -202,8 +202,8 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Governance"></Title>
-                                        <Text text="Based on hands-on experience I can assist you with your Central Launchpad Governance:"></Text>
+                                        <Title text="Governance Framework"></Title>
+                                        <Text text="Establish standards for sustainable launchpad management:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -211,7 +211,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Application Code Reviews"
+                                                text="Application code reviews"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -221,7 +221,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Best Practices"
+                                                text="Development standards"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -231,7 +231,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Recommendations"
+                                                text="Naming conventions"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -241,17 +241,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Naming Conventions"
-                                                class=""/>
-                                        </HBox>
-                                        <HBox>
-                                            <core:Icon
-                                                    src="sap-icon://accept"
-                                                    size="1rem"
-                                                    color="Default"
-                                                    class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
-                                            <Text width="100%"
-                                                text="Responsibilities"
+                                                text="Role and responsibility definitions"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -264,8 +254,8 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Security"></Title>
-                                        <Text text="A Central Launchpad will overlap multiple system which requires a seamless single sign-on experience with a secure authorization concept and well organized launchpad:"></Text>
+                                        <Title text="Security Setup"></Title>
+                                        <Text text="Seamless single sign-on across multiple systems:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -273,7 +263,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Authentication"
+                                                text="Authentication configuration"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -283,7 +273,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Authorizations"
+                                                text="Authorization concepts"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -293,7 +283,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Spaces &amp; Pages"
+                                                text="Role-based spaces and pages"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -306,8 +296,8 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="System"></Title>
-                                        <Text text="Depending on the complexity of your landscape and your needs, you have different options to create a Central Launchpad. I've been working with all possible options:"></Text>
+                                        <Title text="Platform Options"></Title>
+                                        <Text text="Choose the right launchpad solution for your landscape:"></Text>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -315,7 +305,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Fiori Launchpad HUB / Standalone Frontend Server"
+                                                text="FLP HUB / Standalone Frontend Server"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -325,7 +315,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Fiori Launchpad Embedded on your backend"
+                                                text="Embedded Fiori Launchpad"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -335,7 +325,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="BTP WorkZone, standard edition"
+                                                text="BTP WorkZone Standard Edition"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -345,7 +335,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="BTP WorkZone, advanced edition"
+                                                text="BTP WorkZone Advanced Edition"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -376,12 +366,12 @@
                             backgroundColorShade="ShadeB">
                             <VBox alignItems="Center">
                                     <Title width="100%"
-                                        text="Applications &amp; Extensions"
+                                        text="Application Development"
                                         level="H3"
                                         titleStyle="H3"
                                         class="sapUiMediumMarginBottom"/>
                                     <Text
-                                            text="Depending on your Central Launchpad strategy, your Fiori applications will run in BTP or on your S/4HANA system. As a developer, I can build applications in BTP or S/4HANA but I can also help you and your team building applications for your central launchpad connected to any of your SAP Cloud solutions or On-Premise systems for adapting it to your needs using: "
+                                            text="Build Fiori applications for BTP or S/4HANA that integrate seamlessly with your central launchpad. Full-stack development using modern SAP frameworks:"
                                             class="sapUiSmallMarginBottom"/>
                             </VBox>
                         </l:BlockLayoutCell>
@@ -484,8 +474,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="Technologies"></Title>
-                                                        <Text text="BTP offers new type of applications which requires to update the skills of your developer. I can build applications for you but I can also teach and mentor your developers to use the following technologies in BTP:"></Text>
+                                                        <Title text="Development Stack"></Title>
+                                                        <Text text="Modern frameworks for building enterprise-grade Fiori applications:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://syntax"
@@ -546,8 +536,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="Code Quality"></Title>
-                                                        <Text text="It is not because the app looks good that the code looks good. Avoid bugs, keep maintenance low and have happy end users by applying the following:"></Text>
+                                                        <Title text="Quality Assurance"></Title>
+                                                        <Text text="Maintainable code that reduces bugs and technical debt:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -608,8 +598,8 @@
                                                         </Avatar>
                                                     </VBox>
                                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                                        <Title text="DevOps"></Title>
-                                                        <Text text="Avoid suprises when going to production with a good DevOps setup in BTP using:"></Text>
+                                                        <Title text="CI/CD Pipeline"></Title>
+                                                        <Text text="Reliable deployments from development to production:"></Text>
                                                         <HBox>
                                                             <core:Icon
                                                                     src="sap-icon://accept"
@@ -667,7 +657,7 @@
                 <headerToolbar>
                     <Toolbar class="headlineCell">
                         <Title width="100%"
-                            text="Providing Tools"
+                            text="Tools &amp; Accelerators"
                             level="H3"
                             titleStyle="H3"
                             class="sapUiMediumMarginTopBottom"/>
@@ -689,7 +679,7 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Tooling for"></Title>
+                                        <Title text="Migration Support"></Title>
                                         <!-- <Text text="I can guide you to setup your BTP landscape to you needs using:"></Text> -->
                                         <HBox>
                                             <core:Icon
@@ -698,7 +688,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Migrate apps from HUB to Embedded"
+                                                text="HUB to Embedded migration"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -708,7 +698,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Migrate apps from NEO to CF"
+                                                text="NEO to Cloud Foundry migration"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -718,7 +708,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Migrate apps from On-Premise to CF"
+                                                text="On-premise to cloud migration"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -728,7 +718,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="Update apps to the latest version"
+                                                text="Application modernization"
                                                 class=""/>
                                         </HBox>
                                     </VBox>
@@ -739,7 +729,7 @@
                                         </Avatar>
                                     </VBox>
                                     <VBox justifyContent="Start" alignItems="Stretch" class="sapUiTinyMarginBegin">
-                                        <Title text="Templates for:"></Title>
+                                        <Title text="Project Templates"></Title>
                                         <HBox>
                                             <core:Icon
                                                     src="sap-icon://accept"
@@ -747,7 +737,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="UI5 Applications"
+                                                text="UI5 application starters"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
@@ -757,7 +747,7 @@
                                                     color="Default"
                                                     class="sapUiTinyMarginBegin sapUiSmallMarginEnd"/>
                                             <Text width="100%"
-                                                text="UI5 Libraries"
+                                                text="Reusable UI5 library templates"
                                                 class=""/>
                                         </HBox>
                                         <HBox>
