@@ -34,7 +34,7 @@ sap.ui.define(["sap/m/library", "sap/ui/core/UIComponent", "sap/ui/core/mvc/Cont
       URLHelper.redirect(url, true);
     },
     onContact: function _onContact() {
-      window.open("mailto:wouter@lem-tech.be?subject=Let's Work Together", "_blank");
+      window.open("mailto:wouter@lemaire.tech?subject=Let's Work Together", "_blank");
     }
   });
   return AboutMe;

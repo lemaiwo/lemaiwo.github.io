@@ -34,6 +34,6 @@ export default class AboutMe extends Controller {
         URLHelper.redirect(url,true);
     }
     public onContact() {
-        window.open("mailto:wouter@lem-tech.be?subject=Let's Work Together", "_blank");
+        window.open("mailto:wouter@lemaire.tech?subject=Let's Work Together", "_blank");
     }
 }
